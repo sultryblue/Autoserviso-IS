@@ -590,7 +590,7 @@ def stage3_checks(port,adviser,boss,mechanic):
     test('Po perdavimo diagnostika nebepriskiriama',lambda:adviser.request('diagnostic_assign',{'order_id':oid,'mechanic_id':3})[0],409,'FR-13')
     test('Visas sąlygas įvykdęs užsakymas uždaromas',lambda:adviser.request('order_close',{'id':oid,'note':'Apmokėta ir perduota'})[0],200,'FR-13')
     test('Uždarymas išsaugo autorių ir abu laikus',lambda:sql('SELECT status,handover_at IS NOT NULL,closed_at IS NOT NULL,closed_by FROM orders WHERE id=?',(oid,)),[('Uždarytas',1,1,2)],'FR-13')
-    for action in ('order_close','order_ready','order_handover','order_cancel'):
+    for action in ('order_close','order_ready','order_handover'):
         test('Uždaryto užsakymo nekeičia '+action,lambda action=action:adviser.request(action,{'id':oid,'note':'Pakartota'})[0],409,'FR-13')
     test('Pakartotas mokėjimo raktas po uždarymo vis dar grąžina ankstesnį rezultatą',lambda:client.request('payment_start',request)[1]['id'],pid)
     test('DB saugo centus sveikuoju tipu',lambda:sql('SELECT DISTINCT typeof(amount_cents) FROM payments'),[('integer',)],'NF-06')
@@ -610,6 +610,7 @@ def stage3_checks(port,adviser,boss,mechanic):
     test('Apmokėtas, bet nebaigtas darbas blokuoja perdavimą',lambda:adviser.request('order_handover',{'id':unfinished})[0],409,'FR-13')
     # Zero-charge return after rejection of the entire initial scope.
     rejected_order,_=order(decision='Atmesta')
+    test('Atmetus pirmą sąmatą užsakymas lieka Derinamas iki paruošimo',lambda:sql('SELECT status FROM orders WHERE id=?',(rejected_order,)),[('Derinamas',)],'FR-13')
     test('Visą sąmatą atmetus užduotys nesukuriamos',lambda:tasks(rejected_order),[],'FR-19')
     test('Visą sąmatą atmetus mokėtina suma nulinė',lambda:totals(rejected_order),(0,0,0,0,0))
     test('Nepriimtai sąmatai mokėjimas neleidžiamas',lambda:client.request('payment_start',data(rejected_order,1))[0],409)

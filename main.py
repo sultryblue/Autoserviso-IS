@@ -496,8 +496,13 @@ def open_order(c, key):
 def order_after_proposal(c, order, submitted=False):
     if order['status'] in ('Vykdomas','Paruoštas'):
         status='Vykdomas'
+    elif submitted:
+        status='Derinamas'
+    elif confirmed_lines(c,order['id']):
+        status='Patvirtintas'
     else:
-        status='Derinamas' if submitted else ('Patvirtintas' if confirmed_lines(c,order['id']) else 'Naujas')
+        latest=current_estimate(c,order['id'])
+        status='Derinamas' if latest and latest['status']=='Atmesta' else 'Naujas'
     c.execute('UPDATE orders SET status=? WHERE id=?',(status,order['id']))
 
 def client_estimate(c,user,key):
@@ -904,43 +909,37 @@ def mutate(c, user, action, d):
                   (status,minutes,note,now(),now() if status=='Baigtas' else None,key))
         c.execute("UPDATE orders SET status='Vykdomas' WHERE id=?",(order['id'],))
         audit(c,user,'Darbas',key,status)
-    elif action in ('order_ready','order_handover','order_close','order_cancel'):
+    elif action in ('order_ready','order_handover','order_close'):
         adviser(user); order=one(c,'orders',key)
-        if action=='order_cancel':
-            if order['status'] not in ('Naujas','Derinamas') or confirmed_lines(c,key) or current_estimate(c,key) and current_estimate(c,key)['status'] in ('Rengiama','Pateikta'):
-                raise RuleError('Atšaukti galima tik be patvirtintos apimties ir neišspręstos sąmatos.',409)
-            note=required(d,'note');status='Atšauktas'
-            c.execute('UPDATE orders SET status=?,closing_note=? WHERE id=?',(status,note,key))
+        completion_scope(c,key)
+        if action=='order_ready':
+            open_order(c,key);status='Paruoštas'
+            c.execute('UPDATE orders SET status=? WHERE id=?',(status,key))
+            version=current_estimate(c,key)
+            queue_notification(c,user,f'ready:{key}:{version["id"]}','Automobilis paruoštas',f'Užsakymo U-{key} automobilis paruoštas atsiimti.',order_id=key)
         else:
-            completion_scope(c,key)
-            if action=='order_ready':
-                open_order(c,key);status='Paruoštas'
-                c.execute('UPDATE orders SET status=? WHERE id=?',(status,key))
-                version=current_estimate(c,key)
-                queue_notification(c,user,f'ready:{key}:{version["id"]}','Automobilis paruoštas',f'Užsakymo U-{key} automobilis paruoštas atsiimti.',order_id=key)
-            else:
-                if order['status']!='Paruoštas': raise RuleError('Pirmiausia pažymėkite automobilį paruoštu.',409)
-                if payment_summary(c,key)['balance_cents']!=0:
-                    message='Prieš perduodant automobilį ir uždarant užsakymą reikia padengti visą likutį.'
-                    if action=='order_handover':
-                        balance=payment_summary(c,key)
-                        queue_notification(c,user,f'collection:{key}:{balance["confirmed_total_cents"]}:{balance["paid_cents"]}',
-                            'Likutis atsiimant',f'Atsiimant U-{key} automobilį liko sumokėti {balance["balance_cents"]//100},{balance["balance_cents"]%100:02d} Eur.',order_id=key)
-                        audit(c,user,'Užsakymas',key,'Atsiėmimo metu nustatytas neapmokėtas likutis; perdavimas neįvyko',result='Atmesta')
-                        return {'ok':False,'error':message,'_http_status':409}
-                    raise RuleError(message,409)
+            if order['status']!='Paruoštas': raise RuleError('Pirmiausia pažymėkite automobilį paruoštu.',409)
+            if payment_summary(c,key)['balance_cents']!=0:
+                message='Prieš perduodant automobilį ir uždarant užsakymą reikia padengti visą likutį.'
                 if action=='order_handover':
-                    if order['handover_at']: raise RuleError('Automobilio perdavimas jau užregistruotas.',409)
-                    status='Paruoštas'
-                    c.execute('UPDATE orders SET handover_at=? WHERE id=?',(now(),key))
-                    audit(c,user,'Užsakymas',key,'Automobilis perduotas klientui')
-                    return {'ok':True,'id':key}
-                if not order['handover_at']: raise RuleError('Pirmiausia užregistruokite faktinį automobilio perdavimą.',409)
-                status='Uždarytas';note=required(d,'note')
-                c.execute('UPDATE orders SET status=?,closed_at=?,closed_by=?,closing_note=? WHERE id=?',
-                          (status,now(),user['id'],note,key))
-            if status=='Uždarytas':
-                c.execute('UPDATE diagnostic_assignments SET ended_at=? WHERE order_id=? AND ended_at IS NULL',(now(),key))
+                    balance=payment_summary(c,key)
+                    queue_notification(c,user,f'collection:{key}:{balance["confirmed_total_cents"]}:{balance["paid_cents"]}',
+                        'Likutis atsiimant',f'Atsiimant U-{key} automobilį liko sumokėti {balance["balance_cents"]//100},{balance["balance_cents"]%100:02d} Eur.',order_id=key)
+                    audit(c,user,'Užsakymas',key,'Atsiėmimo metu nustatytas neapmokėtas likutis; perdavimas neįvyko',result='Atmesta')
+                    return {'ok':False,'error':message,'_http_status':409}
+                raise RuleError(message,409)
+            if action=='order_handover':
+                if order['handover_at']: raise RuleError('Automobilio perdavimas jau užregistruotas.',409)
+                status='Paruoštas'
+                c.execute('UPDATE orders SET handover_at=? WHERE id=?',(now(),key))
+                audit(c,user,'Užsakymas',key,'Automobilis perduotas klientui')
+                return {'ok':True,'id':key}
+            if not order['handover_at']: raise RuleError('Pirmiausia užregistruokite faktinį automobilio perdavimą.',409)
+            status='Uždarytas';note=required(d,'note')
+            c.execute('UPDATE orders SET status=?,closed_at=?,closed_by=?,closing_note=? WHERE id=?',
+                      (status,now(),user['id'],note,key))
+        if status=='Uždarytas':
+            c.execute('UPDATE diagnostic_assignments SET ended_at=? WHERE order_id=? AND ended_at IS NULL',(now(),key))
         audit(c,user,'Užsakymas',key,status)
     elif action=='user_save':
         role(user,'vadovas'); username=required(d,'username',40); name=required(d,'name',100); r=required(d,'role')
