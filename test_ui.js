@@ -52,6 +52,7 @@ function approved(){const s=base();s.estimates=[{id:1,order_id:1,version:1,statu
  }
  test('Suma pateikiama eurais, ne centais',()=>{const text=run('euro(12345)');assert(text.includes('123,45'));assert(text.includes('€'))});
  test('Kiekis nerodomas tūkstantosiomis dalimis',()=>assert.equal(run('unitsText(1500,1000)'),'1.5'));
+ test('Užsakymo paieška atpažįsta rodomą numerį U-0001',()=>{const text=run('orderSearchText({id:1,plate:"DEMO01",client_name:"Klientas A"})');assert(text.includes('u-0001'));assert(text.includes('1'));assert(text.includes('demo01'));assert(text.includes('klientas a'))});
  test('Naudotojo tekstas saugiai užkoduojamas HTML',()=>assert.equal(run('E("<script> & ")'),'&lt;script&gt; &amp; '));
  test('Lentelę galima fokusuoti klaviatūra',()=>assert(run('table(["Testas"],[["Ilga reikšmė"]])').includes('tabindex="0"')));
  test('Dialogas turi pavadinimą ir tekstinių klaidų sritį',()=>{run('modal("Patikra","<p>Turinys</p>","Išsaugoti",()=>{})');assert.equal(nodes['#dialog'].attributes['aria-labelledby'],'dialogTitle');assert(nodes['#dialog'].innerHTML.includes('role="alert"'))});
