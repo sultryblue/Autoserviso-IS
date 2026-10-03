@@ -1,0 +1,144 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS users (
+ id INTEGER PRIMARY KEY, username TEXT NOT NULL UNIQUE, name TEXT NOT NULL,
+ role TEXT NOT NULL CHECK(role IN ('klientas','vadybininkas','mechanikas','vadovas')),
+ password_hash TEXT NOT NULL, active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1)),
+ client_id INTEGER UNIQUE REFERENCES clients(id),
+ CHECK((role='klientas' AND client_id IS NOT NULL) OR (role<>'klientas' AND client_id IS NULL))
+);
+CREATE TABLE IF NOT EXISTS clients (
+ id INTEGER PRIMARY KEY, name TEXT NOT NULL, phone TEXT NOT NULL,
+ email TEXT NOT NULL DEFAULT '', active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))
+);
+CREATE TABLE IF NOT EXISTS cars (
+ id INTEGER PRIMARY KEY, client_id INTEGER NOT NULL REFERENCES clients(id),
+ plate TEXT NOT NULL UNIQUE, make TEXT NOT NULL, model TEXT NOT NULL, year INTEGER NOT NULL
+);
+CREATE TABLE IF NOT EXISTS appointments (
+ id INTEGER PRIMARY KEY, car_id INTEGER NOT NULL REFERENCES cars(id),
+ start_at TEXT NOT NULL, end_at TEXT NOT NULL, bay INTEGER NOT NULL CHECK(bay IN (1,2)),
+ problem TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'Patvirtintas'
+ CHECK(status IN ('Patvirtintas','Atvyko','Atšauktas','Neatvyko')),
+ created_by INTEGER NOT NULL REFERENCES users(id)
+);
+CREATE TABLE IF NOT EXISTS orders (
+ id INTEGER PRIMARY KEY, appointment_id INTEGER NOT NULL UNIQUE REFERENCES appointments(id),
+ mileage INTEGER NOT NULL CHECK(mileage >= 0), status TEXT NOT NULL DEFAULT 'Naujas'
+ CHECK(status IN ('Naujas','Derinamas','Patvirtintas','Vykdomas','Paruoštas','Uždarytas','Atšauktas')),
+ created_at TEXT NOT NULL, closed_at TEXT, closing_note TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS estimates (
+ id INTEGER PRIMARY KEY, order_id INTEGER NOT NULL REFERENCES orders(id),
+ version INTEGER NOT NULL CHECK(version > 0), status TEXT NOT NULL DEFAULT 'Rengiama'
+ CHECK(status IN ('Rengiama','Pateikta','Patvirtinta','Atmesta')),
+ total_cents INTEGER NOT NULL DEFAULT 0 CHECK(total_cents >= 0),
+ created_by INTEGER NOT NULL REFERENCES users(id), submitted_at TEXT,
+ created_at TEXT NOT NULL, UNIQUE(order_id,version)
+);
+CREATE TABLE IF NOT EXISTS estimate_lines (
+ id INTEGER PRIMARY KEY, estimate_id INTEGER NOT NULL REFERENCES estimates(id),
+ kind TEXT NOT NULL CHECK(kind IN ('Darbas','Detalė')), title TEXT NOT NULL,
+ origin_line_id INTEGER REFERENCES estimate_lines(id),
+ quantity_1000 INTEGER NOT NULL CHECK(typeof(quantity_1000)='integer' AND quantity_1000>0),
+ unit_cents INTEGER NOT NULL CHECK(typeof(unit_cents)='integer' AND unit_cents>=0),
+ line_total_cents INTEGER NOT NULL CHECK(typeof(line_total_cents)='integer' AND
+ line_total_cents=(quantity_1000*unit_cents+500)/1000)
+);
+CREATE TABLE IF NOT EXISTS estimate_decisions (
+ id INTEGER PRIMARY KEY, estimate_id INTEGER NOT NULL UNIQUE REFERENCES estimates(id),
+ client_id INTEGER NOT NULL REFERENCES clients(id), user_id INTEGER NOT NULL REFERENCES users(id),
+ decision TEXT NOT NULL CHECK(decision IN ('Patvirtinta','Atmesta')),
+ decided_at TEXT NOT NULL, note TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS tasks (
+ id INTEGER PRIMARY KEY, line_id INTEGER NOT NULL UNIQUE REFERENCES estimate_lines(id),
+ mechanic_id INTEGER REFERENCES users(id), status TEXT NOT NULL DEFAULT 'Suplanuotas'
+ CHECK(status IN ('Suplanuotas','Vykdomas','Sustabdytas','Baigtas')),
+ assigned_at TEXT, started_at TEXT, finished_at TEXT,
+ minutes INTEGER NOT NULL DEFAULT 0 CHECK(minutes >= 0), note TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS diagnostic_assignments (
+ id INTEGER PRIMARY KEY, order_id INTEGER NOT NULL REFERENCES orders(id),
+ mechanic_id INTEGER NOT NULL REFERENCES users(id), assigned_by INTEGER NOT NULL REFERENCES users(id),
+ assigned_at TEXT NOT NULL, ended_at TEXT
+);
+CREATE TABLE IF NOT EXISTS diagnostic_entries (
+ id INTEGER PRIMARY KEY, assignment_id INTEGER REFERENCES diagnostic_assignments(id),
+ task_id INTEGER REFERENCES tasks(id), author_id INTEGER NOT NULL REFERENCES users(id),
+ created_at TEXT NOT NULL, result TEXT NOT NULL, proposed_works TEXT NOT NULL,
+ kind TEXT NOT NULL CHECK(kind IN ('Pirminė','Papildoma')),
+ CHECK((assignment_id IS NOT NULL AND task_id IS NULL AND kind='Pirminė') OR
+       (assignment_id IS NULL AND task_id IS NOT NULL AND kind='Papildoma'))
+);
+CREATE TABLE IF NOT EXISTS audit (
+ id INTEGER PRIMARY KEY, user_id INTEGER REFERENCES users(id), entity TEXT NOT NULL,
+ entity_id INTEGER NOT NULL, action TEXT NOT NULL, happened_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_appointments_slot ON appointments(bay,start_at,end_at,status);
+CREATE INDEX IF NOT EXISTS idx_estimates_order ON estimates(order_id,version);
+CREATE INDEX IF NOT EXISTS idx_tasks_mechanic ON tasks(mechanic_id,status);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_active_diagnostic ON diagnostic_assignments(order_id) WHERE ended_at IS NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS idx_open_estimate ON estimates(order_id) WHERE status IN ('Rengiama','Pateikta');
+CREATE UNIQUE INDEX IF NOT EXISTS idx_line_origin ON estimate_lines(estimate_id,COALESCE(origin_line_id,id));
+CREATE TRIGGER IF NOT EXISTS estimate_insert_guard BEFORE INSERT ON estimates
+WHEN NEW.status<>'Rengiama' OR NEW.submitted_at IS NOT NULL OR EXISTS(SELECT 1 FROM estimates WHERE id=NEW.id)
+BEGIN SELECT RAISE(ABORT,'Nauja sąmata turi būti rengiama; istorija neperrašoma'); END;
+CREATE TRIGGER IF NOT EXISTS estimate_identity_lock BEFORE UPDATE ON estimates
+WHEN NEW.id<>OLD.id OR NEW.order_id<>OLD.order_id OR NEW.version<>OLD.version OR
+ NEW.created_by<>OLD.created_by OR NEW.created_at<>OLD.created_at OR
+ (OLD.status<>'Rengiama' AND (NEW.total_cents<>OLD.total_cents OR NEW.submitted_at IS NOT OLD.submitted_at))
+BEGIN SELECT RAISE(ABORT,'Sąmatos turinys nekintamas'); END;
+CREATE TRIGGER IF NOT EXISTS estimate_state_guard BEFORE UPDATE OF status ON estimates
+WHEN NEW.status<>OLD.status AND NOT (
+ (OLD.status='Rengiama' AND NEW.status='Pateikta' AND NEW.submitted_at IS NOT NULL AND
+  EXISTS(SELECT 1 FROM estimate_lines WHERE estimate_id=OLD.id) AND
+  NEW.total_cents=(SELECT SUM(line_total_cents) FROM estimate_lines WHERE estimate_id=OLD.id)) OR
+ (OLD.status='Pateikta' AND EXISTS(SELECT 1 FROM estimate_decisions WHERE estimate_id=OLD.id AND decision=NEW.status)))
+BEGIN SELECT RAISE(ABORT,'Neleistinas sąmatos perėjimas'); END;
+CREATE TRIGGER IF NOT EXISTS estimate_delete_guard BEFORE DELETE ON estimates
+BEGIN SELECT RAISE(ABORT,'Sąmatos istorija nenaikinama'); END;
+CREATE TRIGGER IF NOT EXISTS line_insert_guard BEFORE INSERT ON estimate_lines
+WHEN (SELECT status FROM estimates WHERE id=NEW.estimate_id)<>'Rengiama'
+BEGIN SELECT RAISE(ABORT,'Pateiktos versijos eilutės nekintamos'); END;
+CREATE TRIGGER IF NOT EXISTS line_update_guard BEFORE UPDATE ON estimate_lines
+WHEN (SELECT status FROM estimates WHERE id=OLD.estimate_id)<>'Rengiama' OR
+ (SELECT status FROM estimates WHERE id=NEW.estimate_id)<>'Rengiama'
+BEGIN SELECT RAISE(ABORT,'Pateiktos versijos eilutės nekintamos'); END;
+CREATE TRIGGER IF NOT EXISTS line_delete_guard BEFORE DELETE ON estimate_lines
+WHEN (SELECT status FROM estimates WHERE id=OLD.estimate_id)<>'Rengiama'
+BEGIN SELECT RAISE(ABORT,'Pateiktos versijos eilutės nekintamos'); END;
+CREATE TRIGGER IF NOT EXISTS origin_insert_guard BEFORE INSERT ON estimate_lines
+WHEN NEW.origin_line_id IS NOT NULL AND NOT EXISTS (
+ SELECT 1 FROM estimate_lines p JOIN estimates e ON e.id=p.estimate_id
+ JOIN estimates n ON n.id=NEW.estimate_id WHERE p.id=NEW.origin_line_id AND p.origin_line_id IS NULL
+ AND e.order_id=n.order_id AND e.status='Patvirtinta' AND p.kind=NEW.kind AND p.title=NEW.title
+ AND p.quantity_1000=NEW.quantity_1000 AND p.unit_cents=NEW.unit_cents AND p.line_total_cents=NEW.line_total_cents)
+BEGIN SELECT RAISE(ABORT,'Neteisinga pirminė eilutė'); END;
+CREATE TRIGGER IF NOT EXISTS origin_update_guard BEFORE UPDATE ON estimate_lines
+WHEN NEW.origin_line_id IS NOT OLD.origin_line_id OR (OLD.origin_line_id IS NOT NULL AND
+ (NEW.estimate_id<>OLD.estimate_id OR NEW.kind<>OLD.kind OR NEW.title<>OLD.title OR
+  NEW.quantity_1000<>OLD.quantity_1000 OR NEW.unit_cents<>OLD.unit_cents OR NEW.line_total_cents<>OLD.line_total_cents))
+BEGIN SELECT RAISE(ABORT,'Perkelta eilutė nekintama'); END;
+CREATE TRIGGER IF NOT EXISTS decision_insert_guard BEFORE INSERT ON estimate_decisions
+WHEN NOT EXISTS(SELECT 1 FROM estimates e JOIN orders o ON o.id=e.order_id
+ JOIN appointments a ON a.id=o.appointment_id JOIN cars v ON v.id=a.car_id
+ JOIN users u ON u.id=NEW.user_id WHERE e.id=NEW.estimate_id AND e.status='Pateikta'
+ AND o.status NOT IN ('Uždarytas','Atšauktas') AND u.role='klientas' AND u.active=1
+ AND u.client_id=v.client_id AND v.client_id=NEW.client_id)
+BEGIN SELECT RAISE(ABORT,'Neleistinas kliento sprendimas'); END;
+CREATE TRIGGER IF NOT EXISTS decision_apply AFTER INSERT ON estimate_decisions
+BEGIN UPDATE estimates SET status=NEW.decision WHERE id=NEW.estimate_id; END;
+CREATE TRIGGER IF NOT EXISTS decision_update_guard BEFORE UPDATE ON estimate_decisions
+BEGIN SELECT RAISE(ABORT,'Sprendimas nekintamas'); END;
+CREATE TRIGGER IF NOT EXISTS decision_delete_guard BEFORE DELETE ON estimate_decisions
+BEGIN SELECT RAISE(ABORT,'Sprendimas nenaikinamas'); END;
+CREATE TRIGGER IF NOT EXISTS task_origin_guard BEFORE INSERT ON tasks
+WHEN NOT EXISTS(SELECT 1 FROM estimate_lines l JOIN estimates e ON e.id=l.estimate_id
+ WHERE l.id=NEW.line_id AND l.origin_line_id IS NULL AND l.kind='Darbas' AND e.status='Patvirtinta')
+BEGIN SELECT RAISE(ABORT,'Darbui reikia patvirtintos pirminės eilutės'); END;
+CREATE TRIGGER IF NOT EXISTS task_line_lock BEFORE UPDATE OF line_id ON tasks WHEN NEW.line_id<>OLD.line_id
+BEGIN SELECT RAISE(ABORT,'Darbo kilmė nekintama'); END;
+CREATE TRIGGER IF NOT EXISTS diagnostic_entry_update_guard BEFORE UPDATE ON diagnostic_entries
+BEGIN SELECT RAISE(ABORT,'Diagnostikos taisymas yra naujas įrašas'); END;
+CREATE TRIGGER IF NOT EXISTS diagnostic_entry_delete_guard BEFORE DELETE ON diagnostic_entries
+BEGIN SELECT RAISE(ABORT,'Diagnostikos istorija nenaikinama'); END;

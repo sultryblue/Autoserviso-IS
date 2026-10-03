@@ -1,0 +1,29 @@
+# Python laikini failai
+__pycache__/
+*.py[cod]
+
+# Virtualios aplinkos
+.venv/
+venv/
+
+# Vietiniai nustatymai / paslaptys
+.env
+.env.*
+
+# Vykdymo metu sukuriama demonstracinė duomenų bazė ir jos pagalbiniai failai
+servisas.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.bak
+
+# Testų paleidimo metu sugeneruojamos ataskaitos
+test_results.json
+test_ui_results.json
+
+# Vidiniai kūrimo etapų užrašai
+ETAPAS_*.md
+
+# OS failai
+Thumbs.db
+.DS_Store
