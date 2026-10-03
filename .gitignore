@@ -10,8 +10,7 @@ venv/
 .env
 .env.*
 
-# Vykdymo metu sukuriama demonstracinė duomenų bazė ir jos pagalbiniai failai
-servisas.db
+# SQLite pagalbiniai vykdymo failai
 *.db-journal
 *.db-wal
 *.db-shm
