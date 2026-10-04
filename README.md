@@ -57,7 +57,7 @@ UI logikos testams reikalingas **Node.js** (naudojami tik jo standartiniai modul
 node test_ui.js
 ```
 
-Patikrintoje projekto versijoje praėjo **457/457 serverio ir DB patikros** bei **26/26 UI logikos patikros**.
+Patikrintoje projekto versijoje praėjo **457/457 serverio ir DB patikros** bei **29/29 UI logikos patikros** – iš viso **486/486 automatinių patikrų**.
 
 ## Pastaba
 
