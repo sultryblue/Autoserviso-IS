@@ -16,10 +16,6 @@ venv/
 *.db-shm
 *.bak
 
-# Testų paleidimo metu sugeneruojamos ataskaitos
-test_results.json
-test_ui_results.json
-
 # Vidiniai kūrimo etapų užrašai
 ETAPAS_*.md
 
