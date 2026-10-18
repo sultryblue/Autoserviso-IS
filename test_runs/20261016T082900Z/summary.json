@@ -1,0 +1,108 @@
+{
+  "started_at": "2026-10-16T08:29:00.749930+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "node": "v22.16.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "source_sha256": {
+    "main.py": "ae3ab12a8535bef03fc18f67c0d4db0beaa2f834f10e2d202233b0ddc9ac0518",
+    "schema.sql": "1bd73cffa7adff38f860e37e8cc068611de85f652940779c800a4315cf0a1102",
+    "payment_provider.py": "5fc44de9fea99d6395c42d40344a639a6e57e66686cca2c97434012ff0e1d8bf",
+    "notification_provider.py": "6f8d11b34a0945be85a320dd5b5be54c3411ac5a8aea2a0b66ceee3a92231f17",
+    "static/app.js": "f719b15a3ac00fad1b125ea82df02d8f8a22e64e53396c4314977af9282ac0ea",
+    "static/index.html": "907d564eb7604db4e28b9386f9da2632764a0a470f5ea1a491043eb343a8d752",
+    "static/style.css": "2ed3b6342f998afd1ef2846fc9003bb061a3b6a773401fa6e6274782703b8052",
+    "test_system.py": "cf98f0d9bd72cfe969737d1d5c32a134101d2b01c05c23912a45676ec1bc5826",
+    "test_ui.js": "ced8ec28cc39a9af9e70f4206fcacdc0f4cb91d6316971632179c91bed46f726",
+    "test_regressions.py": "830f5930fdb6d9030226b0c987cfdc761cd660fafe7b05172e2b9e0b68cc8374",
+    "test_browser.py": "47b3918777982dfaf5062e4c7c398ec3ae10692107842d3d0535f8c0ae15016d",
+    "run_checks.py": "6d2d87299e856fa9d7301bc31c6f5d182e92d4b2d55dd4bb3818cd8717db6370"
+  },
+  "demonstration_db_sha256_before": "d520c70c1ba10e9b5dac21c38897f6685b72353ad01dc2ff10f0ff8fdc1cd967",
+  "runs": [
+    {
+      "run": 1,
+      "results": [
+        {
+          "group": "http_db",
+          "passed": 457,
+          "total": 457,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:29:00.762428+00:00",
+          "result_file": "test_results.json"
+        },
+        {
+          "group": "ui_logic",
+          "passed": 33,
+          "total": 33,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:29:11.137818+00:00",
+          "result_file": "test_ui_results.json"
+        },
+        {
+          "group": "regression",
+          "passed": 14,
+          "total": 14,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:29:11.307252+00:00",
+          "result_file": "test_regression_results.json"
+        },
+        {
+          "group": "browser_layout",
+          "passed": 24,
+          "total": 24,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:29:29.898989+00:00",
+          "result_file": "test_runs/20261016T082900Z/run1/browser/browser_results.json"
+        }
+      ],
+      "functional_passed": 504,
+      "functional_total": 504
+    },
+    {
+      "run": 2,
+      "results": [
+        {
+          "group": "http_db",
+          "passed": 457,
+          "total": 457,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:30:16.082989+00:00",
+          "result_file": "test_results.json"
+        },
+        {
+          "group": "ui_logic",
+          "passed": 33,
+          "total": 33,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:30:26.064006+00:00",
+          "result_file": "test_ui_results.json"
+        },
+        {
+          "group": "regression",
+          "passed": 14,
+          "total": 14,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:30:26.229882+00:00",
+          "result_file": "test_regression_results.json"
+        },
+        {
+          "group": "browser_layout",
+          "passed": 24,
+          "total": 24,
+          "exit_code": 0,
+          "started_at": "2026-10-16T08:30:43.495200+00:00",
+          "result_file": "test_runs/20261016T082900Z/run2/browser/browser_results.json"
+        }
+      ],
+      "functional_passed": 504,
+      "functional_total": 504
+    }
+  ],
+  "demonstration_db_sha256_after": "d520c70c1ba10e9b5dac21c38897f6685b72353ad01dc2ff10f0ff8fdc1cd967",
+  "demonstration_db_unchanged": true,
+  "source_unchanged": true,
+  "success": true,
+  "finished_at": "2026-10-16T08:31:26.935683+00:00"
+}

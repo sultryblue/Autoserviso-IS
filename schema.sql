@@ -242,3 +242,10 @@ WHEN NEW.client_id IS NULL OR
  (OLD.status='Patvirtintas' AND NEW.client_id<>(SELECT client_id FROM cars WHERE id=NEW.car_id)) OR
  (OLD.status<>'Patvirtintas' AND (NEW.client_id<>OLD.client_id OR NEW.car_id<>OLD.car_id))
 BEGIN SELECT RAISE(ABORT,'Istorinio vizito klientas ir automobilis nekintami'); END;
+
+-- Registration ownership is immutable, including still-confirmed appointments.
+-- CREATE IF NOT EXISTS also installs this protection when an existing DB starts.
+CREATE TRIGGER IF NOT EXISTS appointment_client_identity_guard
+BEFORE UPDATE OF client_id ON appointments
+WHEN NEW.client_id IS NOT OLD.client_id
+BEGIN SELECT RAISE(ABORT,'Vizito registracijos klientas nekintamas'); END;

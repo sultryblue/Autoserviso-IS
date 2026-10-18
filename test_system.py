@@ -951,7 +951,7 @@ def stage5a_checks(port,adviser,boss):
     oid=sql('SELECT id FROM orders WHERE appointment_id=?',(visit,))[0][0]
     test('Savininko keitimas blokuojamas esant neužbaigtam užsakymui',lambda:boss.request('car_save',transfer)[0],409,'FR-05')
     assignment=ok(adviser,'diagnostic_assign',{'order_id':oid,'mechanic_id':3})
-    test('Diagnostikos validavimo klaida turi lietuvišką lauką',lambda:mechanic.request('diagnostic_add',{'assignment_id':assignment,'result':'','proposed_works':'Patikra'})[1]['error'],'Laukas „diagnostikos rezultatas“ privalomas (iki 2000 simbolių).','PF-03')
+    test('Diagnostikos validavimo klaida turi lietuvišką lauką',lambda:mechanic.request('diagnostic_add',{'assignment_id':assignment,'result':'','proposed_works':'Patikra'})[1]['error'],'Laukas „diagnostikos rezultatas“ privalomas (iki 2000 simbolių).','PF-04')
     ok(mechanic,'diagnostic_add',{'assignment_id':assignment,'result':'Nustatytas gedimas','proposed_works':'Pakeisti dalį'})
     version=ok(adviser,'estimate_save',{'order_id':oid,'lines':[{'kind':'Darbas','title':'Patikros darbas','quantity_1000':1000,'unit_cents':2500}]})
     ok(adviser,'estimate_submit',{'id':version});ok(first,'estimate_decide',{'id':version,'status':'Patvirtinta'})
@@ -978,7 +978,7 @@ def stage5a_checks(port,adviser,boss):
     new_visit=ok(second,'appointment_save',{**slot,'start_at':'2028-01-03T09:00','end_at':'2028-01-03T10:00','problem':'Naujo savininko patikra'})
     test('Naujas vizitas susietas su nauju klientu',lambda:sql('SELECT client_id FROM appointments WHERE id=?',(new_visit,)),[(owners[1],)])
     test('Senas klientas nemato naujo vizito',lambda:first.request(f'client/appointment?id={new_visit}')[0],404)
-    test('Naujo vizito pranešimas skirtas naujam klientui',lambda:sql('SELECT DISTINCT client_id FROM notifications WHERE appointment_id=?',(new_visit,)),[(owners[1],)],'FR-28')
+    test('Naujo vizito pranešimas skirtas naujam klientui',lambda:sql('SELECT DISTINCT client_id FROM notifications WHERE appointment_id=?',(new_visit,)),[(owners[1],)],'FR-30')
     ok(second,'appointment_status',{'id':new_visit,'status':'Atšauktas'})
     test('Vadovas taip pat gali atlikti leistiną savininko keitimą',lambda:boss.request('car_save',{**transfer,'client_id':owners[0]})[0],200,'FR-05')
     test('Atšaukto vizito istorija nelieka naujam automobilio savininkui',lambda:first.request(f'client/appointment?id={new_visit}')[0],404)

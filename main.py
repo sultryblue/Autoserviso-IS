@@ -160,6 +160,8 @@ def free_slots(c, user, d):
     if exclude:
         visit = owned(c,user,'appointments',exclude) if user['role']=='klientas' else one(c,'appointments',exclude)
         if visit['status']!='Patvirtintas': raise RuleError('Vizito keisti nebegalima.',409)
+        if car['client_id'] != visit['client_id']:
+            raise RuleError('Vizito automobilį galima keisti tik to paties kliento ribose.',409)
     try:
         day = datetime.strptime(required(d,'date',10),'%Y-%m-%d')
     except ValueError:
@@ -501,8 +503,12 @@ def order_after_proposal(c, order, submitted=False):
     elif confirmed_lines(c,order['id']):
         status='Patvirtintas'
     else:
-        latest=current_estimate(c,order['id'])
-        status='Derinamas' if latest and latest['status']=='Atmesta' else 'Naujas'
+        # A new draft is now the latest version, so inspect the proposal history.
+        # Once negotiation has begun, revising a rejected offer must not reset it.
+        negotiated=c.execute("""SELECT 1 FROM estimates WHERE order_id=? AND
+            (submitted_at IS NOT NULL OR status IN ('Pateikta','Patvirtinta','Atmesta')) LIMIT 1""",
+            (order['id'],)).fetchone()
+        status='Derinamas' if negotiated or order['status']=='Derinamas' else 'Naujas' 
     c.execute('UPDATE orders SET status=? WHERE id=?',(status,order['id']))
 
 def client_estimate(c,user,key):
@@ -846,10 +852,15 @@ def mutate(c, user, action, d):
             raise RuleError('Vizitas turi vykti tą pačią dieną tarp 08:00 ir 18:00; pabaiga vėlesnė už pradžią.')
         start,end=a.isoformat(timespec='minutes'),b.isoformat(timespec='minutes')
         bay=integer(d.get('bay'),1,2)
-        if key and one(c,'appointments',key)['status']!='Patvirtintas': raise RuleError('Galima keisti tik Patvirtintą vizitą.',409)
+        visit=one(c,'appointments',key) if key else None
+        if visit and visit['status']!='Patvirtintas':
+            raise RuleError('Galima keisti tik Patvirtintą vizitą.',409)
+        if visit and car['client_id'] != visit['client_id']:
+            raise RuleError('Vizito automobilį galima keisti tik to paties kliento ribose. Kitam klientui registruokite naują vizitą.',409)
         conflict=slot_conflict(c,car['id'],bay,start,end,key or 0)
         if conflict: raise RuleError('Šiuo laiku darbo vieta arba automobilis jau užregistruotas.',409)
-        values=(car['id'],car['client_id'],start,end,bay,required(d,'problem'))
+        client_id=visit['client_id'] if visit else car['client_id']
+        values=(car['id'],client_id,start,end,bay,required(d,'problem'))
         if key:
             c.execute('UPDATE appointments SET car_id=?,client_id=?,start_at=?,end_at=?,bay=?,problem=? WHERE id=?',(*values,key))
         else:

@@ -52,13 +52,49 @@ function approved(){const s=base();s.estimates=[{id:1,order_id:1,version:1,statu
  }
  test('Suma pateikiama eurais, ne centais',()=>{const text=run('euro(12345)');assert(text.includes('123,45'));assert(text.includes('€'))});
  test('Kiekis nerodomas tūkstantosiomis dalimis',()=>assert.equal(run('unitsText(1500,1000)'),'1.5'));
- test('Užsakymo paieška atpažįsta rodomą numerį U-0001',()=>{const text=run('orderSearchText({id:1,plate:"DEMO01",client_name:"Klientas A"})');assert(text.includes('u-0001'));assert(text.includes('1'));assert(text.includes('demo01'));assert(text.includes('klientas a'))});
+ s=base();s.orders=[{...s.orders[0],id:1,plate:'DEMO01',client_name:'Jonas Petrauskas'}, {...s.orders[0],id:28,plate:'XYZ228',client_name:'Ona Kazlauskaitė'}];state(s);run('view="orders";render()');
+ test('Užsakymų sąrašo filtras: ID, U-0001, automobilis, klientas ir neradimas',()=>{
+  for(const q of ['1','U-0001','DEMO01','Jonas']){
+   document.querySelector('#search').oninput({target:{value:q}});
+   const html=document.querySelector('#results').innerHTML;
+   assert(html.includes('U-0001'),q);assert(!html.includes('U-0028'),q);
+  }
+  document.querySelector('#search').oninput({target:{value:'Ona Kazlauskaitė'}});
+  assert(document.querySelector('#results').innerHTML.includes('U-0028'));
+  assert(!document.querySelector('#results').innerHTML.includes('U-0001'));
+  document.querySelector('#search').oninput({target:{value:'U-9999'}});
+  assert(document.querySelector('#results').innerHTML.includes('Pagal paieškos kriterijus įrašų nerasta.'));
+  assert(!document.querySelector('#results').innerHTML.includes('<tbody>'));
+  document.querySelector('#search').oninput({target:{value:''}});
+  assert(document.querySelector('#results').innerHTML.includes('U-0001'));
+  assert(document.querySelector('#results').innerHTML.includes('U-0028'));
+ });
  s=base();s.clients=[{id:1,name:'Jonas Petrauskas',phone:'+37060011111',email:'jonas@example.com',active:1},{id:2,name:'Ona Kazlauskaitė',phone:'+37060022222',email:'ona@example.com',active:1}];state(s);run('view="clients";render()');
- test('Klientų paieška randa pagal vardą',()=>{const search=document.querySelector('#search');search.oninput({target:{value:'jonas'}});const html=document.querySelector('#results').innerHTML;assert(html.includes('Jonas Petrauskas'));assert(!html.includes('Ona Kazlauskaitė'))});
- test('Klientų paieška randa pagal telefoną',()=>{const search=document.querySelector('#search');search.oninput({target:{value:'22222'}});const html=document.querySelector('#results').innerHTML;assert(html.includes('Ona Kazlauskaitė'));assert(!html.includes('Jonas Petrauskas'))});
+ test('Klientų paieška randa pagal vardą',()=>{const search=document.querySelector('#search');search.oninput({target:{value:'jonas'}});const html=document.querySelector('#results').innerHTML;assert(html.includes('Jonas Petrauskas'));assert(!html.includes('Ona Kazlauskaitė'));search.oninput({target:{value:'nerastas klientas'}});assert(document.querySelector('#results').innerHTML.includes('Pagal paieškos kriterijus įrašų nerasta.'))});
+ test('Klientų paieška randa pagal telefoną',()=>{const search=document.querySelector('#search');search.oninput({target:{value:'22222'}});const html=document.querySelector('#results').innerHTML;assert(html.includes('Ona Kazlauskaitė'));assert(!html.includes('Jonas Petrauskas'));search.oninput({target:{value:'9999999999'}});assert(document.querySelector('#results').innerHTML.includes('Pagal paieškos kriterijus įrašų nerasta.'))});
  test('Naudotojo tekstas saugiai užkoduojamas HTML',()=>assert.equal(run('E("<script> & ")'),'&lt;script&gt; &amp; '));
  test('Lentelę galima fokusuoti klaviatūra',()=>assert(run('table(["Testas"],[["Ilga reikšmė"]])').includes('tabindex="0"')));
  test('Dialogas turi pavadinimą ir tekstinių klaidų sritį',()=>{run('modal("Patikra","<p>Turinys</p>","Išsaugoti",()=>{})');assert.equal(nodes['#dialog'].attributes['aria-labelledby'],'dialogTitle');assert(nodes['#dialog'].innerHTML.includes('role="alert"'))});
+
+ test('Tuščio sąrašo pranešimas atskirtas nuo paieškos neradimo',()=>{
+  assert(run('table(["Nr."],[])').includes('Įrašų dar nėra.'));
+  assert(run('table(["Nr."],[],"Pagal paieškos kriterijus įrašų nerasta.")').includes('Pagal paieškos kriterijus įrašų nerasta.'));
+ });
+ s=base();s.clients=[{id:1,active:1},{id:2,active:1}];s.cars=[{id:1,client_id:1,plate:'REG01'},{id:2,client_id:1,plate:'REG02'},{id:3,client_id:2,plate:'FOREIGN03'}];s.appointments=[{id:1,car_id:1,client_id:1,status:'Patvirtintas'}];state(s);
+ test('Vizito keitimo forma siūlo tik to paties kliento automobilius',()=>{
+  run('editAppointment(1)');const html=nodes['#dialog'].innerHTML;
+  assert(html.includes('REG01'));assert(html.includes('REG02'));assert(!html.includes('FOREIGN03'));
+ });
+ test('Naujo vizito forma leidžia rinktis visų aktyvių klientų automobilius',()=>{
+  run('editAppointment()');assert(nodes['#dialog'].innerHTML.includes('FOREIGN03'));
+ });
+ sandbox.fetch=async()=>({ok:true,status:200,json:async()=>({notifications:[{id:1,type:'Patvirtintas vizitas',status:'Perduotas tiekėjui',attempts:1,recipient:'a@example.com',channel:'El. paštas'}],attempts:[],mock_mode:'success'})});
+ const notificationsContent=new Element();sandbox.notificationsContent=notificationsContent;
+ state(base());run('view="notifications"');await run('renderNotifications(notificationsContent)');
+ test('Pranešimo perdavimo būsena vienoda ir aiškiai pažymėta kaip imitacija',()=>{
+  assert(notificationsContent.innerHTML.includes('Perduotas tiekėjui (imitacija)'));
+  assert(!notificationsContent.innerHTML.includes('Išsiųsta (imitacija)'));
+ });
  // Resolve actual app.js fetch calls out of order, with deterministic responses.
  const pending=[];sandbox.fetch=(url)=>new Promise(resolve=>pending.push({url,resolve}));
  function respond(index,data,ok=true){pending[index].resolve({ok,status:ok?200:400,json:async()=>data})}
@@ -78,7 +114,7 @@ function approved(){const s=base();s.estimates=[{id:1,order_id:1,version:1,statu
  sandbox.fetch=async()=>({status:500,ok:false,json:async()=>({error:'Serverio patikros klaida.'})});
  let error='';try{await run('refresh()')}catch(e){error=e.message}
  test('Nesėkmingas duomenų atnaujinimas nerodo TypeError',()=>assert.equal(error,'Serverio patikros klaida.'));
- const report={type:'JS logikos patikra VM su DOM ir HTTP imitacijomis; ne reali naršyklė',total:results.length,passed:results.filter(x=>x.passed).length,tests:results};
+ const report={executed_at:new Date().toISOString(),environment:{node:process.version,platform:process.platform,architecture:process.arch},type:'JS logikos patikra VM su DOM ir HTTP imitacijomis; ne reali naršyklė',total:results.length,passed:results.filter(x=>x.passed).length,tests:results};
  fs.writeFileSync(path.join(__dirname,'test_ui_results.json'),JSON.stringify(report,null,2));
  console.log(`UI logika: ${report.passed}/${report.total}`);for(const t of results.filter(x=>!x.passed))console.log(t);
  process.exitCode=report.passed===report.total?0:1;

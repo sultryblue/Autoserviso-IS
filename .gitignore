@@ -16,6 +16,7 @@ venv/
 *.db-shm
 *.bak
 
+
 # Vidiniai kūrimo etapų užrašai
 ETAPAS_*.md
 

@@ -1,0 +1,1998 @@
+{
+  "executed_at": "2026-10-16T08:30:45.229030+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "os": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "browser": "Chromium 144.0.7559.96",
+    "headless": true,
+    "viewports": [
+      "1360x960",
+      "390x844"
+    ]
+  },
+  "transport": "Local HTML/CSS/JS; GET response fixtures recorded from real local HTTP server; browser POST writes disabled",
+  "scope": "Real rendering, Tab reachability of visible enabled controls, Escape, search typing and horizontal table scrolling. Not end-to-end browser/server writes; not full WCAG certification.",
+  "tests": [
+    {
+      "id": "BR01-1360",
+      "requirement": "NF-03",
+      "description": "Vadybininko navigacija ir pagrindiniai sąrašai",
+      "passed": true,
+      "error": "",
+      "duration_ms": 3653.07
+    },
+    {
+      "id": "BR02-1360",
+      "requirement": "NF-03",
+      "description": "Kliento navigacija, kontaktai, automobiliai, vizitai ir užsakymas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2865.51
+    },
+    {
+      "id": "BR03-1360",
+      "requirement": "NF-03",
+      "description": "Mechaniko aktyvi diagnostika ir vykdomas darbas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 852.8
+    },
+    {
+      "id": "BR04-1360",
+      "requirement": "NF-03",
+      "description": "Vadovo pranešimai, suvestinė, paskyros ir žurnalas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2164.36
+    },
+    {
+      "id": "BR05-1360",
+      "requirement": "NF-03",
+      "description": "Kliento, automobilio ir vizito dialogų laukai pasiekiami Tab",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2332.81
+    },
+    {
+      "id": "BR06-1360",
+      "requirement": "NF-03",
+      "description": "Mechaniko diagnostikos ir darbo baigimo formos",
+      "passed": true,
+      "error": "",
+      "duration_ms": 1334.49
+    },
+    {
+      "id": "BR07-1360",
+      "requirement": "NF-03",
+      "description": "Sąmatos, mokėjimo, sprendimo ir uždarymo dialogai",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2320.29
+    },
+    {
+      "id": "BR08-1360",
+      "requirement": "NF-03",
+      "description": "Paskyros kūrimo ir redagavimo formos",
+      "passed": true,
+      "error": "",
+      "duration_ms": 906.12
+    },
+    {
+      "id": "BR09-1360",
+      "requirement": "NF-03",
+      "description": "Kliento vizito laiko pasirinkimo forma",
+      "passed": true,
+      "error": "",
+      "duration_ms": 596.74
+    },
+    {
+      "id": "BR10-1360",
+      "requirement": "NF-03",
+      "description": "Klientų paieškos įvedimas klaviatūra ir neradimas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 765.9
+    },
+    {
+      "id": "BR11-1360",
+      "requirement": "NF-03",
+      "description": "Užsakymų paieškos įvedimas klaviatūra ir neradimas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 629.51
+    },
+    {
+      "id": "BR12-1360",
+      "requirement": "NF-03",
+      "description": "Plačios lentelės horizontalus slinkimas klaviatūra",
+      "passed": true,
+      "error": "",
+      "duration_ms": 485.74
+    },
+    {
+      "id": "BR01-390",
+      "requirement": "NF-03",
+      "description": "Vadybininko navigacija ir pagrindiniai sąrašai",
+      "passed": true,
+      "error": "",
+      "duration_ms": 3945.82
+    },
+    {
+      "id": "BR02-390",
+      "requirement": "NF-03",
+      "description": "Kliento navigacija, kontaktai, automobiliai, vizitai ir užsakymas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2473.55
+    },
+    {
+      "id": "BR03-390",
+      "requirement": "NF-03",
+      "description": "Mechaniko aktyvi diagnostika ir vykdomas darbas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 790.22
+    },
+    {
+      "id": "BR04-390",
+      "requirement": "NF-03",
+      "description": "Vadovo pranešimai, suvestinė, paskyros ir žurnalas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2107.67
+    },
+    {
+      "id": "BR05-390",
+      "requirement": "NF-03",
+      "description": "Kliento, automobilio ir vizito dialogų laukai pasiekiami Tab",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2529.14
+    },
+    {
+      "id": "BR06-390",
+      "requirement": "NF-03",
+      "description": "Mechaniko diagnostikos ir darbo baigimo formos",
+      "passed": true,
+      "error": "",
+      "duration_ms": 1224.18
+    },
+    {
+      "id": "BR07-390",
+      "requirement": "NF-03",
+      "description": "Sąmatos, mokėjimo, sprendimo ir uždarymo dialogai",
+      "passed": true,
+      "error": "",
+      "duration_ms": 2810.25
+    },
+    {
+      "id": "BR08-390",
+      "requirement": "NF-03",
+      "description": "Paskyros kūrimo ir redagavimo formos",
+      "passed": true,
+      "error": "",
+      "duration_ms": 1305.93
+    },
+    {
+      "id": "BR09-390",
+      "requirement": "NF-03",
+      "description": "Kliento vizito laiko pasirinkimo forma",
+      "passed": true,
+      "error": "",
+      "duration_ms": 491.35
+    },
+    {
+      "id": "BR10-390",
+      "requirement": "NF-03",
+      "description": "Klientų paieškos įvedimas klaviatūra ir neradimas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 667.85
+    },
+    {
+      "id": "BR11-390",
+      "requirement": "NF-03",
+      "description": "Užsakymų paieškos įvedimas klaviatūra ir neradimas",
+      "passed": true,
+      "error": "",
+      "duration_ms": 644.64
+    },
+    {
+      "id": "BR12-390",
+      "requirement": "NF-03",
+      "description": "Plačios lentelės horizontalus slinkimas klaviatūra",
+      "passed": true,
+      "error": "",
+      "duration_ms": 707.6
+    }
+  ],
+  "passed": 24,
+  "total": 24,
+  "layout_checks": [
+    {
+      "screen": "vadybininkas/overview",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/clients",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 284,
+            "right": 624
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/cars",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/appointments",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/orders",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 284,
+            "right": 624
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/tasks",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/order",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/overview",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/contacts",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/cars",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/appointments",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/orders",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/order",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "mechanikas/diagnostics",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "mechanikas/tasks",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadovas/notifications",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "notificationMode",
+            "left": 284,
+            "right": 783.5
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/reports",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "from",
+            "left": 284,
+            "right": 783.5
+          },
+          {
+            "name": "to",
+            "left": 801.5,
+            "right": 1301
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/users",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadovas/audit",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "from",
+            "left": 284,
+            "right": 783.5
+          },
+          {
+            "name": "to",
+            "left": 801.5,
+            "right": 1301
+          },
+          {
+            "name": "entity",
+            "left": 284,
+            "right": 783.5
+          },
+          {
+            "name": "result",
+            "left": 801.5,
+            "right": 1301
+          },
+          {
+            "name": "user_id",
+            "left": 284,
+            "right": 783.5
+          },
+          {
+            "name": "external_only",
+            "left": 801.5,
+            "right": 1301
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 272.140625,
+            "bottom": 687.84375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "name",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "phone",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "email",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 257.4375,
+            "bottom": 702.5625,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "client_id",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "plate",
+            "left": 327,
+            "right": 671
+          },
+          {
+            "name": "year",
+            "left": 689,
+            "right": 1033
+          },
+          {
+            "name": "make",
+            "left": 327,
+            "right": 671
+          },
+          {
+            "name": "model",
+            "left": 689,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 207.59375,
+            "bottom": 752.390625,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "car_id",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "start_at",
+            "left": 327,
+            "right": 671
+          },
+          {
+            "name": "end_at",
+            "left": 689,
+            "right": 1033
+          },
+          {
+            "name": "bay",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "problem",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 359.40625,
+            "bottom": 600.59375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "mechanic_id",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 359.40625,
+            "bottom": 600.59375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "mechanic_id",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "mechanikas/tasks/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 256.375,
+            "bottom": 703.609375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "result",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "proposed_works",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "mechanikas/tasks/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 295,
+            "bottom": 664.984375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "minutes",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "note",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "mechanikas/tasks/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 295,
+            "bottom": 664.984375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "minutes",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "note",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/order/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 146.109375,
+            "bottom": 813.890625,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "kind",
+            "left": 327,
+            "right": 437
+          },
+          {
+            "name": "title",
+            "left": 445,
+            "right": 794
+          },
+          {
+            "name": "quantity",
+            "left": 802,
+            "right": 872
+          },
+          {
+            "name": "price",
+            "left": 880,
+            "right": 990
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/order/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 338.484375,
+            "bottom": 621.5,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "note",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "klientas/order/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 299.109375,
+            "bottom": 660.875,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "amount",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "klientas/order/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 318.484375,
+            "bottom": 641.5,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "decision_note",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/users/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 185.75,
+            "bottom": 774.234375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "name",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "username",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "role",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "client_id",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "password",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/users/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 196.953125,
+            "bottom": 763.046875,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "name",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "username",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "role",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "password",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "klientas/appointments/dialog",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [
+          {
+            "left": 300,
+            "right": 1060,
+            "top": 167,
+            "bottom": 792.984375,
+            "height": 960,
+            "client": 758,
+            "scroll": 758
+          }
+        ],
+        "inputs": [
+          {
+            "name": "car_id",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "date",
+            "left": 327,
+            "right": 671
+          },
+          {
+            "name": "minutes",
+            "left": 689,
+            "right": 1033
+          },
+          {
+            "name": "slot",
+            "left": 327,
+            "right": 1033
+          },
+          {
+            "name": "problem",
+            "left": 327,
+            "right": 1033
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/clients",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 284,
+            "right": 624
+          }
+        ]
+      }
+    },
+    {
+      "screen": "Paieška: clients",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 284,
+            "right": 624
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/orders",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 284,
+            "right": 624
+          }
+        ]
+      }
+    },
+    {
+      "screen": "Paieška: orders",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 284,
+            "right": 624
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/audit",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "from",
+            "left": 284,
+            "right": 783.5
+          },
+          {
+            "name": "to",
+            "left": 801.5,
+            "right": 1301
+          },
+          {
+            "name": "entity",
+            "left": 284,
+            "right": 783.5
+          },
+          {
+            "name": "result",
+            "left": 801.5,
+            "right": 1301
+          },
+          {
+            "name": "user_id",
+            "left": 284,
+            "right": 783.5
+          },
+          {
+            "name": "external_only",
+            "left": 801.5,
+            "right": 1301
+          }
+        ]
+      }
+    },
+    {
+      "screen": "mechanikas/diagnostics",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "mechanikas/tasks",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadovas/notifications",
+      "measurements": {
+        "width": 1360,
+        "document": 1360,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "notificationMode",
+            "left": 284,
+            "right": 783.5
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/clients",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/cars",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/appointments",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/orders",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/tasks",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadybininkas/order",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/overview",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/contacts",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/cars",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/appointments",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/orders",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "klientas/order",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "mechanikas/diagnostics",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "mechanikas/tasks",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadovas/notifications",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "notificationMode",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/reports",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "from",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "to",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/users",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": []
+      }
+    },
+    {
+      "screen": "vadovas/audit",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "from",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "to",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "entity",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "result",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "user_id",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "external_only",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 200.34375,
+            "bottom": 643.65625,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "name",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "phone",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "email",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 94.46875,
+            "bottom": 749.53125,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "client_id",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "plate",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "year",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "make",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "model",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 96.09375,
+            "bottom": 747.890625,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "car_id",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "start_at",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "end_at",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "bay",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "problem",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 287.59375,
+            "bottom": 556.390625,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "mechanic_id",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/overview/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 301.40625,
+            "bottom": 542.59375,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "mechanic_id",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "mechanikas/tasks/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 162.96875,
+            "bottom": 681.03125,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "result",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "proposed_works",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "mechanikas/tasks/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 237,
+            "bottom": 606.984375,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "minutes",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "note",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "mechanikas/tasks/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 237,
+            "bottom": 606.984375,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "minutes",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "note",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/order/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 42.203125,
+            "bottom": 801.796875,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "kind",
+            "left": 46,
+            "right": 191
+          },
+          {
+            "name": "title",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "quantity",
+            "left": 46,
+            "right": 191
+          },
+          {
+            "name": "price",
+            "left": 199,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/order/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 280.484375,
+            "bottom": 563.5,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "note",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "klientas/order/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 217.109375,
+            "bottom": 626.875,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "amount",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "klientas/order/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 222.6875,
+            "bottom": 621.3125,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "decision_note",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/users/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 113.953125,
+            "bottom": 730.046875,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "name",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "username",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "role",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "client_id",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "password",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/users/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 126.953125,
+            "bottom": 717.046875,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "name",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "username",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "role",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "password",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "klientas/appointments/dialog",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 371,
+            "top": 42.203125,
+            "bottom": 801.796875,
+            "height": 844,
+            "client": 350,
+            "scroll": 350
+          }
+        ],
+        "inputs": [
+          {
+            "name": "car_id",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "date",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "minutes",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "slot",
+            "left": 46,
+            "right": 344
+          },
+          {
+            "name": "problem",
+            "left": 46,
+            "right": 344
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/clients",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "Paieška: clients",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadybininkas/orders",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "Paieška: orders",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    },
+    {
+      "screen": "vadovas/audit",
+      "measurements": {
+        "width": 390,
+        "document": 390,
+        "dialogs": [],
+        "inputs": [
+          {
+            "name": "from",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "to",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "entity",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "result",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "user_id",
+            "left": 31,
+            "right": 359
+          },
+          {
+            "name": "external_only",
+            "left": 31,
+            "right": 359
+          }
+        ]
+      }
+    }
+  ],
+  "screenshots": [
+    "1360_overview.png",
+    "1360_clients.png",
+    "1360_cars.png",
+    "1360_appointments.png",
+    "1360_orders.png",
+    "1360_tasks.png",
+    "1360_order.png",
+    "1360_client_overview.png",
+    "1360_client_contacts.png",
+    "1360_client_cars.png",
+    "1360_client_appointments.png",
+    "1360_client_orders.png",
+    "1360_client_order.png",
+    "1360_diagnostics.png",
+    "1360_tasks.png",
+    "1360_notifications.png",
+    "1360_reports.png",
+    "1360_users.png",
+    "1360_audit.png",
+    "1360_form_0.png",
+    "1360_form_1.png",
+    "1360_form_2.png",
+    "1360_form_3.png",
+    "1360_form_4.png",
+    "1360_mechform_0.png",
+    "1360_mechform_1.png",
+    "1360_mechform_2.png",
+    "1360_orderform_0.png",
+    "1360_orderform_1.png",
+    "1360_orderform_2.png",
+    "1360_orderform_3.png",
+    "1360_userform_0.png",
+    "1360_userform_1.png",
+    "1360_client_visit_form.png",
+    "390_overview.png",
+    "390_clients.png",
+    "390_cars.png",
+    "390_appointments.png",
+    "390_orders.png",
+    "390_tasks.png",
+    "390_order.png",
+    "390_client_overview.png",
+    "390_client_contacts.png",
+    "390_client_cars.png",
+    "390_client_appointments.png",
+    "390_client_orders.png",
+    "390_client_order.png",
+    "390_diagnostics.png",
+    "390_tasks.png",
+    "390_notifications.png",
+    "390_reports.png",
+    "390_users.png",
+    "390_audit.png",
+    "390_form_0.png",
+    "390_form_1.png",
+    "390_form_2.png",
+    "390_form_3.png",
+    "390_form_4.png",
+    "390_mechform_0.png",
+    "390_mechform_1.png",
+    "390_mechform_2.png",
+    "390_orderform_0.png",
+    "390_orderform_1.png",
+    "390_orderform_2.png",
+    "390_orderform_3.png",
+    "390_userform_0.png",
+    "390_userform_1.png",
+    "390_client_visit_form.png"
+  ]
+}

@@ -1,0 +1,458 @@
+OK TA-01 Duomenys be prisijungimo nepasiekiami
+OK TA-02 Neteisingas slaptažodis
+OK TA-03 Teisingas prisijungimas
+OK TA-04 Privalomi kliento duomenys
+OK TA-05 Kliento registravimas
+OK TA-06 Automobilio registravimas
+OK TA-07 Automobilio numerio unikalumas
+OK TA-08 Vizito registravimas
+OK TA-09 Persidengiančio laiko blokavimas
+OK TA-10 Gretimi laikai leidžiami
+OK TA-11 Vizito atšaukimas
+OK TA-12 Priėmimas sukuria užsakymą
+OK TA-13 Pakartotinis priėmimas nesukuria antro užsakymo
+OK TA-14 Nebaigto užsakymo uždarymas blokuojamas
+OK TA-15 Sąmatos parengimas
+OK TA-16 Tiksli sąmatos suma
+OK TA-17 Neigiamas kiekis atmetamas
+OK TA-18 Atmetus įvestį išsaugoma ankstesnė būsena
+OK TA-19 Sąmatos pateikimas klientui
+OK TA-20 Darbuotojas nepriima kliento sprendimo
+OK TA-21 Klientas patvirtina sąmatą be neprivalomos pastabos
+OK TA-22 Nauja versija išlaiko ankstesnį patvirtinimą
+OK TA-23 Sena versija nebegali būti patvirtinta
+OK TA-24 Darbo paskyrimas
+OK TA-25 Kitas mechanikas negali vykdyti darbo
+OK TA-26 Mechanikui neperduodami klientų kontaktai ir kainos
+OK TA-27 Mechanikas pradeda savo darbą
+OK TA-28 Pradėjus darbus galima siūlyti papildymą
+OK TA-29 Automobilis neparuošiamas esant nebaigtam darbui
+OK TA-30 Darbo sustabdymas
+OK TA-31 Darbo tęsimas
+OK TA-32 Darbo užbaigimas
+OK TA-33 Paruošimas atidavimui
+OK TA-34 Užsakymo uždarymas
+OK TA-35 Kliento archyvavimas išsaugo istoriją
+OK TA-36 Vadybininkas negali kurti paskyrų
+OK TA-37 Vadovas sukuria paskyrą
+OK TA-38 Keitimas be CSRF kodo atmetamas
+OK TA-39 Veiksmų atsekamumas
+OK TA-40 Atsijungimas panaikina prieigą
+OK TA-41 Duomenys išlieka naujame DB prisijungime
+OK TA-42 Klientas prisijungia
+OK TA-43 Klientas mato savo kontaktus
+OK TA-44 Klientas mato tik savo automobilius
+OK TA-45 Kliento atsakyme tik leistini savitarnos objektai
+OK TA-46 Kitas klientas gauna savo, ne pirmojo kliento automobilį
+OK TA-47 Svetimas automobilis pagal ID neperskaitomas
+OK TA-48 Svetimas vizitas pagal ID neperskaitomas
+OK TA-49 Svetimas užsakymas pagal ID neperskaitomas
+OK TA-50 Savo automobilis pagal ID perskaitomas
+OK TA-51 Savo kontaktai redaguojami
+OK TA-52 Kontaktų pakeitimas išsaugotas
+OK TA-53 Svetimi kontaktai neredaguojami
+OK TA-54 Svetimas automobilis neredaguojamas
+OK TA-55 Savas automobilis redaguojamas ir numeris normalizuojamas
+OK TA-56 Normalizuotas numeris išsaugotas
+OK TA-57 Kuriant automobilį savininkas imamas iš sesijos, ne iš pateikto ID
+OK TA-58 Pasikartojantis automobilio numeris atmetamas
+OK TA-59 Svetimam automobiliui vizitas neregistruojamas
+OK TA-60 Svetimas vizitas neredaguojamas
+OK TA-61 Svetimas vizitas neatšaukiamas
+OK TA-62 Užimta darbo vieta nerodoma tarp laisvų laikų
+OK TA-63 Laisva kita darbo vieta rodoma
+OK TA-64 Laisvų laikų paieška svetimam automobiliui draudžiama
+OK TA-65 Paieškoje negalima išskirti svetimo vizito ID
+OK TA-66 Laisvas laikas priimamas savo automobiliui
+OK TA-67 Vizito būsena Patvirtintas
+OK TA-68 Klientas mato tik savo vizitus
+OK TA-69 Persidengiantis vizitas atmetamas
+OK TA-70 To paties automobilio konfliktas tikrinamas ir kitoje vietoje
+OK TA-71 Gretimi nepersidengiantys intervalai leidžiami
+OK TA-72 Patvirtintą savo vizitą galima keisti
+OK TA-73 Keičiant vizitą jo paties intervalas laikomas laisvu
+OK TA-74 Klientas negali pats priimti automobilio
+OK TA-75 Klientas gali atšaukti savo Patvirtintą vizitą
+OK TA-76 Atšaukto vizito keisti negalima
+OK TA-77 Po laisvų laikų peržiūros užimtas laikas atmetamas registruojant
+OK TA-78 Vadybininkas ir toliau priima automobilį
+OK TA-79 Savo užsakymo būsena perskaitoma
+OK TA-80 Klientas mato tik savo užsakymus
+OK TA-81 Vidinė užsakymo pastaba neperduodama
+OK TA-82 Priimto savo vizito keisti negalima
+OK TA-83 Priimto savo vizito atšaukti negalima
+OK TA-84 Klientui neprieinamas svetimas arba darbuotojo veiksmas user_save
+OK TA-85 Klientui neprieinamas svetimas arba darbuotojo veiksmas user_disable
+OK TA-86 Klientui neprieinamas svetimas arba darbuotojo veiksmas client_archive
+OK TA-87 Klientui neprieinamas svetimas arba darbuotojo veiksmas estimate_save
+OK TA-88 Klientui neprieinamas svetimas arba darbuotojo veiksmas estimate_submit
+OK TA-89 Klientui neprieinamas svetimas arba darbuotojo veiksmas estimate_decide
+OK TA-90 Klientui neprieinamas svetimas arba darbuotojo veiksmas task_assign
+OK TA-91 Klientui neprieinamas svetimas arba darbuotojo veiksmas task_status
+OK TA-92 Klientui neprieinamas svetimas arba darbuotojo veiksmas order_ready
+OK TA-93 Klientui neprieinamas svetimas arba darbuotojo veiksmas order_close
+OK TA-94 Klientui neprieinamas svetimas arba darbuotojo veiksmas order_cancel
+OK TA-95 Kliento keitimas be CSRF atmetamas
+OK TA-96 Mechanikas negali redaguoti kliento kontaktų
+OK TA-97 Mechanikas negauna klientų paskyrų sąrašo
+OK TA-98 Vadovas negali sukurti antros to paties kliento paskyros
+OK TA-99 Vadovas išjungia kliento paskyrą
+OK TA-100 Išjungta paskyra netęsia jau sukurtos sesijos
+OK TA-101 Neaktyvus klientas negali prisijungti
+OK TA-102 DB draudžia kliento rolę be kliento ryšio
+OK TA-103 DB draudžia darbuotojui kliento ryšį
+OK TA-104 DB draudžia dvi paskyras vienam klientui
+OK TA-105 Atmestos svetimų duomenų užklausos jų nepakeitė
+OK TA-106 Be diagnostikos sąmata nerengiama
+OK TA-107 Mechanikas negali sau paskirti diagnostikos
+OK TA-108 Vadybininkas paskiria aktyvų mechaniką
+OK TA-109 Kitas mechanikas diagnostikos neįrašo
+OK TA-110 Paskirtas mechanikas įrašo diagnostiką
+OK TA-111 Diagnostikoje kainos laukas nepriimamas
+OK TA-112 Vadovas perleidžia diagnostiką
+OK TA-113 Vienas aktyvus paskyrimas ir išlikusi ankstesnė istorija
+OK TA-114 Ankstesnio paskyrimo diagnostikos įrašas išliko
+OK TA-115 Buvęs vykdytojas neberašo į pasibaigusį paskyrimą
+OK TA-116 Buvęs vykdytojas nebemato perleistos aktyvios diagnostikos
+OK TA-117 Naujasis vykdytojas įrašo diagnostiką
+OK TA-118 DB draudžia antrą aktyvų paskyrimą
+OK TA-119 Neaktyvus mechanikas nepaskiriamas
+OK TA-120 Klientui diagnostikos duomenys neperduodami
+OK TA-121 Sukurta pirmoji versija
+OK TA-122 Rengiama versija redaguojama
+OK TA-123 Antros neišspręstos versijos kurti negalima
+OK TA-124 Juodraštis savitarnoje nerodomas
+OK TA-125 Mechanikas negali rengti sąmatos
+OK TA-126 Pateikiama konkreti versija
+OK TA-127 Pateikta versija neredaguojama per HTTP
+OK TA-128 DB draudžia pateiktos eilutės pakeitimą
+OK TA-129 DB draudžia pateiktos eilutės ištrynimą
+OK TA-130 DB draudžia naują eilutę pateiktoje versijoje
+OK TA-131 DB draudžia pateiktos sumos pakeitimą
+OK TA-132 DB draudžia grąžinti pateiktą versiją į juodraštį
+OK TA-133 Klientas peržiūri savo pateiktą versiją
+OK TA-134 Svetimas klientas negali peržiūrėti versijos pakeitęs ID
+OK TA-135 Svetimas klientas negali patvirtinti versijos
+OK TA-136 Vadovas negali priimti kliento sprendimo
+OK TA-137 Kliento sprendimas be CSRF atmetamas
+OK TA-138 Klientas patvirtina v1
+OK TA-139 Antras prieštaraujantis sprendimas atmetamas
+OK TA-140 DB neleidžia perrašyti sprendimo
+OK TA-141 DB neleidžia ištrinti sprendimo
+OK TA-142 Pirminė eilutė sukūrė vieną užduotį
+OK TA-143 Patvirtintos eilutės negalima pateikti kaip naujos
+OK TA-144 Negalima pakeisti perkeliamų kainų
+OK TA-145 V2 automatiškai perkelia ankstesnę origin eilutę
+OK TA-146 Nauja papildoma eilutė yra pirminė
+OK TA-147 V2 rodoma suma 15000 centų
+OK TA-148 DB draudžia nepatvirtintos naujos eilutės užduotį
+OK TA-149 Iki darbo pradžios papildymas derinamas
+OK TA-150 Derinant papildymą ankstesnį patvirtintą darbą pradėti galima
+OK TA-151 Patvirtinus v2 sukuriama tik nauja užduotis
+OK TA-152 Unikali patvirtinta apimtis yra 15000, ne 25000
+OK TA-153 Pirminei eilutei neatsirado antro darbo
+OK TA-154 Naujas darbas yra Suplanuotas
+OK TA-155 DB neleidžia kurti darbo iš eilutės kopijos
+OK TA-156 Savo darbo metu registruojamas papildomas gedimas
+OK TA-157 Kito darbo vykdytojas papildomo gedimo neįrašo
+OK TA-158 Papildomo gedimo pasiūlymas naujos užduoties nesukuria
+OK TA-159 Vykdomo užsakymo papildymas jo nesustabdo
+OK TA-160 Klientas atmeta papildymą
+OK TA-161 Atmetimas išlaiko 15000 centų apimtį
+OK TA-162 Atmetimas neatšaukia vykdomos užduoties
+OK TA-163 Atmesta nauja eilutė nesukūrė darbo
+OK TA-164 Visų versijų sprendimai lieka istorijoje
+OK TA-165 Daliniai kiekiai apvalinami deterministiškai centais
+OK TA-166 Visos pinigų ir kiekių reikšmės saugomos kaip integer
+OK TA-167 Float pinigų įvestis atmetama
+OK TA-168 Pasikartojanti origin įvestis atmetama
+OK TA-169 Svetimo užsakymo origin atmetamas
+OK TA-170 Kitas mechanikas nepradeda svetimos naujos užduoties
+OK TA-171 Nulinė faktinė trukmė leidžiama pagal neneigiamumo taisyklę
+OK TA-172 Darbo paskyrimo, pradžios ir baigimo laikai išsaugoti
+OK TA-173 Rengiama versija blokuoja paruošimą
+OK TA-174 Pateikta versija blokuoja paruošimą
+OK TA-175 Paruoštame automobilyje naujas gedimas grąžina į vykdymą
+OK TA-176 Uždarytam užsakymui sąmatos papildymas draudžiamas
+OK TA-177 Uždarytam užsakymui papildomas gedimas neregistruojamas
+OK TA-178 Uždarytam užsakymui diagnostika nepaskiriama
+OK TA-179 Mechanikui neperduodamos kainų ir sprendimų lentelės
+OK TA-180 Klientas atmeta visą pradinę sąmatą
+OK TA-181 Atmetus pradinę sąmatą užduočių nėra
+OK TA-182 Visą remontą atmetus automobilis gali būti paruoštas
+OK TA-183 Atmetus v2=15000, v1=10000 lieka patvirtinta
+OK TA-184 V1 užduotis išlieka vykdoma atmetus v2
+OK TA-185 V2 atmetimas naujų užduočių nesukuria
+OK TA-186 Ankstesnis darbas sėkmingai baigiamas atmetus papildymą
+OK TA-187 Remontas prasideda be jokio mokėjimo
+OK TA-188 Mokėjimams v1 ir v2 origin apimtis 15000, ne 25000
+OK TA-189 Svetimo užsakymo finansai pagal ID neprieinami
+OK TA-190 Svetimo užsakymo mokėjimas nepradedamas
+OK TA-191 Mechanikas negauna finansų per endpointą
+OK TA-192 Mechaniko snapshot neturi mokėjimų
+OK TA-193 Klientas neregistruoja vietinio atsiskaitymo
+OK TA-194 Vadybininkas negali veikti kaip internetu mokantis klientas
+OK TA-195 Mechanikui uždrausta payment_start
+OK TA-196 Mechanikui uždrausta payment_local
+OK TA-197 Mechanikui uždrausta payment_mock_result
+OK TA-198 Anonimas finansų neskaito
+OK TA-199 Mokėjimo inicijavimas be CSRF atmetamas
+OK TA-200 Neleistina centų įvestis 0
+OK TA-201 Neleistina centų įvestis -1
+OK TA-202 Neleistina centų įvestis 1.5
+OK TA-203 Neleistina centų įvestis 1.0
+OK TA-204 Neleistina centų įvestis True
+OK TA-205 Neleistina centų įvestis '1.00'
+OK TA-206 Mokėjimas virš realaus likučio atmetamas
+OK TA-207 Per trumpas request_key atmetamas
+OK TA-208 Avansas laukia ir rezervuoja 8000 ct
+OK TA-209 Tas pats request_key grąžina tą patį mokėjimą
+OK TA-210 Pakartota inicijavimo užklausa nurodo pakartojimą
+OK TA-211 Pakartojimas nekuria antros rezervacijos
+OK TA-212 Tas pats raktas su kita suma atmetamas
+OK TA-213 Antras avansas neviršija laisvo likučio
+OK TA-214 Vietinis mokėjimas taip pat įvertina rezervą
+OK TA-215 Klientas negali imituoti svetimo mokėjimo rezultato
+OK TA-216 Imitacijos rezultatas be CSRF atmetamas
+OK TA-217 Suklastotas techninis rezultatas nepriimamas
+OK TA-218 Naršyklės pakeista suma negaliojančiame paraše atmetama
+OK TA-219 Pasirašytas, bet neatitinkantis rezultatas {'order_id': 1007}
+OK TA-220 Pasirašytas, bet neatitinkantis rezultatas {'amount_cents': 8001}
+OK TA-221 Pasirašytas, bet neatitinkantis rezultatas {'currency': 'USD'}
+OK TA-222 Pasirašytas, bet neatitinkantis rezultatas {'status': 'Unknown'}
+OK TA-223 Nežinoma tiekėjo operacija atmetama
+OK TA-224 Kortelės laukų turintis rezultatas atmetamas, jo turinys nesaugomas
+OK TA-225 Po neteisingų rezultatų balansas ir rezervas nepakeisti
+OK TA-226 Laukimo scenarijus galioja
+OK TA-227 Vėlavimas neatlaisvina rezervacijos
+OK TA-228 Sėkmingas techninis atsakymas priimamas be žmogaus sesijos
+OK TA-229 Sėkmė užskaito 8000 ct ir panaikina rezervą
+OK TA-230 Pasikartojantis callback atpažįstamas
+OK TA-231 Operacijos ID nekuria antro sėkmingo mokėjimo
+OK TA-232 Pakartotinis callback likučio antrą kartą nemažina
+OK TA-233 Galutiniam atsakymui prieštaraujantis rezultatas atmetamas
+OK TA-234 Prieštaraujantis rezultatas nekeičia apskaitos
+OK TA-235 Prieštaravimas pažymimas techninio veikėjo audite
+OK TA-236 Techniniai laukai ir kortelės duomenys negrąžinami klientui
+OK TA-237 Kito kliento savitarna neturi šio kliento mokėjimų
+OK TA-238 Viso leistino likučio mokėjimas rezervuoja visą sumą
+OK TA-239 Visiškai rezervavus neleidžiama dar 1 ct
+OK TA-240 Nesėkmingas mock rezultatas registruojamas
+OK TA-241 Nesėkmė atlaisvina rezervą ir nekeičia realaus likučio
+OK TA-242 Nesėkmė nepanaikina remonto leidimo
+OK TA-243 Nesėkmė pati neuždaro užsakymo
+OK TA-244 Nepavykusio mokėjimo istorija lieka
+OK TA-245 Pakartota nesėkmė atpažįstama
+OK TA-246 Nesėkmė vėliau nepaverčiama sėkme
+OK TA-247 Vadybininko vietinis mokėjimas mažina likutį
+OK TA-248 Vietinio mokėjimo įrašas turi autorių ir neturi tiekėjo ID
+OK TA-249 Vietinis mokėjimas audituotas
+OK TA-250 Vietinio registravimo pakartojimas nedubliuoja mokėjimo
+OK TA-251 Vietinis viršmokestis draudžiamas
+OK TA-252 Vietinio mokėjimo negalima išspręsti kaip internetinio
+OK TA-253 Likutis tiksliai 1 ct išsaugomas
+OK TA-254 Vienas nesumokėtas centas blokuoja perdavimą
+OK TA-255 Vienas nesumokėtas centas blokuoja uždarymą
+OK TA-256 Vadovas registruoja tiksliai 1 ct vietinį mokėjimą
+OK TA-257 Finansinis likutis tampa tiksliai nulis
+OK TA-258 Net 1 ct viršmokestis apmokėtam užsakymui atmetamas
+OK TA-259 Be faktinio perdavimo net apmokėto užsakymo uždaryti negalima
+OK TA-260 Rengiama papildoma versija blokuoja uždarymą
+OK TA-261 Pateikta papildoma versija blokuoja uždarymą
+OK TA-262 Atmestas papildymas nepakeičia jau apmokėtos apimties
+OK TA-263 Klientas pats perdavimo neregistruoja
+OK TA-264 Mechanikas perdavimo neregistruoja
+OK TA-265 Vadovas užregistruoja tikrą automobilio perdavimą
+OK TA-266 Perdavimas turi laiką, bet dar neuždaro užsakymo
+OK TA-267 Perdavimo autorius atsekamas
+OK TA-268 Pakartotinis perdavimas atmetamas
+OK TA-269 Po perdavimo nauji darbai nebederinami
+OK TA-270 Po perdavimo diagnostika nebepriskiriama
+OK TA-271 Visas sąlygas įvykdęs užsakymas uždaromas
+OK TA-272 Uždarymas išsaugo autorių ir abu laikus
+OK TA-273 Uždaryto užsakymo nekeičia order_close
+OK TA-274 Uždaryto užsakymo nekeičia order_ready
+OK TA-275 Uždaryto užsakymo nekeičia order_handover
+OK TA-276 Pakartotas mokėjimo raktas po uždarymo vis dar grąžina ankstesnį rezultatą
+OK TA-277 DB saugo centus sveikuoju tipu
+OK TA-278 Unikalus operacijos ID
+OK TA-279 Unikalus užklausos raktas
+OK TA-280 Mokėjimo suma nekintama
+OK TA-281 Galutinė mokėjimo būsena nekintama
+OK TA-282 Mokėjimo istorija netrinama
+OK TA-283 Žurnalas nekintamas
+OK TA-284 Žurnalas netrinamas
+OK TA-285 Apmokėtas, bet nebaigtas darbas blokuoja uždarymą
+OK TA-286 Apmokėtas, bet nebaigtas darbas blokuoja perdavimą
+OK TA-287 Atmetus pirmą sąmatą užsakymas lieka Derinamas iki paruošimo
+OK TA-288 Visą sąmatą atmetus užduotys nesukuriamos
+OK TA-289 Visą sąmatą atmetus mokėtina suma nulinė
+OK TA-290 Nepriimtai sąmatai mokėjimas neleidžiamas
+OK TA-291 Neremontuotas automobilis paruošiamas grąžinti
+OK TA-292 Neremontuotas automobilis perduodamas be fiktyvaus mokėjimo
+OK TA-293 Atmestos sąmatos užsakymas uždaromas pagal tą patį grąžinimo procesą
+OK TA-294 Dvi lygiagrečios 8000 ct užklausos į 10000 ct likutį neviršija limito
+OK TA-295 Po lenktynės rezervuota tik 8000 ct
+OK TA-296 Lygiagretus identiškas request_key aptarnaujamas idempotentiškai
+OK TA-297 Lygiagretiems pakartojimams sukuriamas vienas įrašas
+OK TA-298 Du vienalaikiai callback apdorojami saugiai
+OK TA-299 Du callback užskaito tik vieną 1000 ct mokėjimą
+OK TA-300 Vietinis ir internetinis mokėjimai lenktynėje neviršija likučio
+OK TA-301 Sėkmingų ir laukiančių suma neviršija patvirtintos apimties
+OK TA-302 DB FK patikra po mokėjimų scenarijų
+OK TA-303 Patvirtintas vizitas kuria po vieną SMS ir el. pašto pranešimą
+OK TA-304 Sėkmingo siuntimo būsena reiškia tik perdavimą tiekėjui
+OK TA-305 Pakartota konfliktuojanti registracija atmetama
+OK TA-306 Neįvykęs vizitas nesukuria papildomų pranešimų
+OK TA-307 Pranešimo registravimo DB klaida neatlieka pusės vizito transakcijos
+OK TA-308 Po atšauktos transakcijos naujo vizito nėra
+OK TA-309 Užsakymas užfiksuoja klientą, automobilį ir problemą priimant
+OK TA-310 Rengiama sąmata nekuria pateikimo pranešimo
+OK TA-311 Adapteris kviečiamas tik po matomo verslo COMMIT
+OK TA-312 Pradinės sąmatos pranešimo tipas teisingas
+OK TA-313 Tiekėjo gedimas nepanaikina sąmatos pateikimo
+OK TA-314 Nepavykęs bandymas išsaugotas prie to paties pranešimo
+OK TA-315 Pranešimas lieka Siuntimo klaida
+OK TA-316 Klientas nemato pranešimų techninės sąsajos
+OK TA-317 Klientas negali kartoti pranešimo
+OK TA-318 Klientas nekonfigūruoja tiekėjo imitacijos
+OK TA-319 Mechanikas nemato pranešimų techninės sąsajos
+OK TA-320 Mechanikas negali kartoti pranešimo
+OK TA-321 Mechanikas nekonfigūruoja tiekėjo imitacijos
+OK TA-322 Klientas negauna pranešimų ar audito per snapshot
+OK TA-323 Svetimo pranešimo ID nesuteikia klientui skaitymo teisės
+OK TA-324 Vadybininkas mato pranešimus
+OK TA-325 Vadybininkas negauna vidinių bandymų ar raktų
+OK TA-326 Tik vadovas keičia tiekėjo imitacijos režimą
+OK TA-327 Retry be CSRF neleidžiamas
+OK TA-328 Vadybininkas pakartoja nepavykusį siuntimą
+OK TA-329 Retry prideda bandymą, nekeičia notification skaičiaus
+OK TA-330 Pakartota ta pati retry užklausa nedubliuoja bandymo
+OK TA-331 Pakartotinis siuntimas gali pavykti
+OK TA-332 Bandymų istorijoje lieka du gedimai ir sėkmė
+OK TA-333 Sėkmingas pranešimas pakartotinai nesiunčiamas
+OK TA-334 Retry nepakeičia pateiktos sąmatos verslo būsenos
+OK TA-335 Pakartotas sąmatos pateikimas nekuria naujo pranešimo
+OK TA-336 DB neleidžia dublikuoti event_key ir channel
+OK TA-337 Pranešimų būsenos netampa Perskaityta ar Gautas
+OK TA-338 Papildomai pateiktai versijai kuriamas atskiras įvykis
+OK TA-339 Laiko viršijimas įrašomas kaip techninė siuntimo klaida
+OK TA-340 Laiko viršijimas neanuliuoja papildomos sąmatos pateikimo
+OK TA-341 Dvi vienalaikės retry užklausos prideda tik vieną bandymą
+OK TA-342 Po retry lenktynės istorijoje tik du bandymai
+OK TA-343 Po COMMIT dar neišsiųsta užduotis išlieka DB
+OK TA-344 Nepradėtam siuntimui nėra išgalvotų bandymų
+OK TA-345 Atnaujintas siuntimo vykdymas aptinka išlikusias užduotis
+OK TA-346 Atkūrimas neprideda antro verslo įvykio
+OK TA-347 Nesėkmingas mokėjimas nekuria sėkmės pranešimo
+OK TA-348 Laukiantis mokėjimas nekuria sėkmės pranešimo
+OK TA-349 Vietinis sėkmingas mokėjimas sukuria pranešimus
+OK TA-350 Pakartotas vietinis mokėjimas nedubliuoja pranešimų
+OK TA-351 Internetinis sėkmingas mokėjimas sukuria pranešimus
+OK TA-352 Pakartotas callback nedubliuoja pranešimų
+OK TA-353 Automobilio paruošimas sukuria pranešimus
+OK TA-354 Pakartota paruošimo užklausa nedubliuoja pranešimo
+OK TA-355 Likutis atsiimant blokuoja perdavimą, bet užregistruoja perspėjimą
+OK TA-356 Pakartota to paties likučio patikra nedubliuoja pranešimo
+OK TA-357 Pranešimas apie likutį neapsimeta automobilio perdavimu
+OK TA-358 Suvestinė įskaito pirmos dienos pabaigos patvirtinimą
+OK TA-359 Suvestinė antrą dieną neskaičiuoja kopijuotų origin ir nesėkmingų mokėjimų
+OK TA-360 Baigtis ir mokėjimai priskiriami faktinėms įvykio datoms
+OK TA-361 Suvestinė grupuojama pagal dieną serveryje
+OK TA-362 Bendra vertė 15000 ct, versijų istorija nedvigubina vertės
+OK TA-363 Tuščias laikotarpis grąžina nulius
+OK TA-364 Neteisingas suvestinės laikotarpis atmetamas from=2027-04-03&to=2027-04-01
+OK TA-365 Neteisingas suvestinės laikotarpis atmetamas from=2027-13-01&to=2027-04-01
+OK TA-366 Neteisingas suvestinės laikotarpis atmetamas from=bad&to=bad
+OK TA-367 Klientas negauna vadovo suvestinių
+OK TA-368 Klientas negauna žurnalo
+OK TA-369 Mechanikas negauna vadovo suvestinių
+OK TA-370 Mechanikas negauna žurnalo
+OK TA-371 Vadybininkas negauna vadovo suvestinių
+OK TA-372 Vadybininkas negauna žurnalo
+OK TA-373 Vadovo klaidų filtras pateikia tik pranešimų tiekėjo klaidas
+OK TA-374 Audito puslapiavimas negrąžina viso žurnalo
+OK TA-375 Vadovas mato bandymų techninius kodus
+OK TA-376 Pranešimo turinys nekeičiamas
+OK TA-377 Pranešimas nenaikinamas
+OK TA-378 Bandymas nekintamas
+OK TA-379 Bandymas nenaikinamas
+OK TA-380 Užsakymo kliento tapatybė nekintama
+OK TA-381 Užsakymo automobilio ryšys saugomas
+OK TA-382 Pranešimo kontekstas negali priklausyti kitam klientui
+OK TA-383 Klientas negali redaguoti paskyros ar eskaluoti rolės
+OK TA-384 Mechanikas negali redaguoti paskyros ar eskaluoti rolės
+OK TA-385 Vadybininkas negali redaguoti paskyros ar eskaluoti rolės
+OK TA-386 Paskyros redagavimui privalomas CSRF
+OK TA-387 Vadovas pakeičia darbuotojo duomenis ir rolę
+OK TA-388 Nauja rolė taikoma jau prisijungusiai paskyrai
+OK TA-389 Sumažinus rolę senos sesijos vadovo teisės nebegalioja
+OK TA-390 Rolės pakeitimas įrašytas žurnale
+OK TA-391 Dirbančio mechaniko rolė nepakeičiama
+OK TA-392 Vadovas negali pats panaikinti savo vadovo rolės
+OK TA-393 Kliento paskyra neperjungiama kitam klientui
+OK TA-394 Deaktyvavimas blokuoja esamą pakeistos rolės sesiją
+OK TA-395 Deaktyvuota redaguota paskyra nebeprisijungia
+OK TA-396 Nauja maiša saugo algoritmą ir darbo koeficientą
+OK TA-397 Vienodas slaptažodis gauna skirtingas druskas
+OK TA-398 Senas hash formatas tebėra tinkamas prisijungimui
+OK TA-399 Neteisingas slaptažodis su sena maiša atmetamas
+OK TA-400 Tikrinamas maišoje nurodytas, ne hardcoded koeficientas
+OK TA-401 Sugadinta maiša grąžina nesėkmę, ne serverio klaidą
+OK TA-402 Pakeitus slaptažodį senos sesijos panaikinamos
+OK TA-403 Senas slaptažodis po pakeitimo netinka
+OK TA-404 Dar nepasibaigusi sesija atnaujinama
+OK TA-405 Neveiklumo terminas atnaujinamas 30 minučių
+OK TA-406 Pasibaigusi neveiklumo sesija nebetinka
+OK TA-407 Atsijungimas panaikina sesiją
+OK TA-408 Vietinio HTTP slapukas neteigia HTTPS
+OK TA-409 HTTPS konfigūracijoje slapukas Secure
+OK TA-410 HTTPS atsijungimo slapukas taip pat Secure
+OK TA-411 Slaptažodžiai ir maišos nepatenka į auditą
+OK TA-412 DB realizuoja visas 15 loginių esybių
+OK TA-413 Galutinė FK patikra po 4 etapo scenarijų
+OK TA-414 Savininko keitimas blokuojamas esant Patvirtintam vizitui
+OK TA-415 Klientas negali perduoti automobilio nurodęs svetimą client_id
+OK TA-416 Minutėmis suvienodinami sekundžių intervalai nepriimami
+OK TA-417 Neleistinas sekundžių intervalas nesukuria vizito
+OK TA-418 Savininko keitimas blokuojamas esant neužbaigtam užsakymui
+OK TA-419 Diagnostikos validavimo klaida turi lietuvišką lauką
+OK TA-420 Vadybininkas gali pakeisti savininką užbaigus aptarnavimą
+OK TA-421 Naujas savininkas mato įsigytą automobilį
+OK TA-422 Senas savininkas nebegali redaguoti perduoto automobilio
+OK TA-423 Senas savininkas išlaiko savo vizito istoriją
+OK TA-424 Naujas savininkas negauna seno vizito pakeitęs ID
+OK TA-425 Naujas savininkas nemato seno vizito bendroje savitarnoje
+OK TA-426 Senas savininkas išlaiko užsakymo nuosavybę
+OK TA-427 Naujas savininkas negauna seno užsakymo
+OK TA-428 Naujas savininkas negauna senos sąmatos
+OK TA-429 Naujas savininkas negauna seno mokėjimo istorijos
+OK TA-430 Naujas savininkas negali mokėti už seną užsakymą
+OK TA-431 Priėmimo kontekstas nekinta keičiant savininką
+OK TA-432 Savininko keitimas atsekamas audite
+OK TA-433 Mechanikui neperduodamas visų darbuotojų katalogas
+OK TA-434 Naujas vizitas susietas su nauju klientu
+OK TA-435 Senas klientas nemato naujo vizito
+OK TA-436 Naujo vizito pranešimas skirtas naujam klientui
+OK TA-437 Vadovas taip pat gali atlikti leistiną savininko keitimą
+OK TA-438 Atšaukto vizito istorija nelieka naujam automobilio savininkui
+OK TA-439 Atšaukęs vizitą klientas išlaiko savo įrašą
+OK TA-440 DB saugo istorinio vizito kliento tapatybę
+OK TA-441 5A scenarijaus FK patikra
+OK TA-442 Sena DB migruoja išlaikydama paskyras ir istoriją
+OK TA-443 Pakartotinis paleidimas nekeičia migracijos duomenų
+OK TA-444 1 etapo DB juodraštis migruoja neprarasdamas duomenų
+OK TA-445 2 etapo migracija pakartojama saugiai
+OK TA-446 Senas darbuotojo sprendimas neverčiamas fiktyviu kliento sutikimu
+OK TA-447 3 etapo migracija išlaiko 2 etapo paskyras, sprendimus, darbus ir auditą
+OK TA-448 3 etapo migracija saugiai kartojama
+OK TA-449 Prieš migraciją išsaugoma 2 etapo DB kopija
+OK TA-450 Migracija nekuria išgalvotų mokėjimų ar perdavimo įrodymų
+OK TA-451 Migracija išlaiko slaptažodį ir užfiksuoja užsakymo kontekstą
+OK TA-452 4 etapo migracija saugiai kartojama
+OK TA-453 Prieš 4 etapo migraciją išsaugota kopija
+OK TA-454 Migracija nekuria pranešimų už senus įvykius
+OK TA-455 5A migracija išlaiko užsakymo klientą, o naujam vizitui naudoja automobilio klientą
+OK TA-456 5A migracija saugiai kartojama
+OK TA-457 Prieš 5A migraciją išsaugota DB kopija
+Rezultatas: 457/457; test_results.json

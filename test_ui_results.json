@@ -1,7 +1,13 @@
 {
+  "executed_at": "2026-10-16T08:30:26.208Z",
+  "environment": {
+    "node": "v22.16.0",
+    "platform": "linux",
+    "architecture": "x64"
+  },
   "type": "JS logikos patikra VM su DOM ir HTTP imitacijomis; ne reali naršyklė",
-  "total": 29,
-  "passed": 29,
+  "total": 33,
+  "passed": 33,
   "tests": [
     {
       "name": "Naujas užsakymas nesiūlo paruošimo",
@@ -76,7 +82,7 @@
       "passed": true
     },
     {
-      "name": "Užsakymo paieška atpažįsta rodomą numerį U-0001",
+      "name": "Užsakymų sąrašo filtras: ID, U-0001, automobilis, klientas ir neradimas",
       "passed": true
     },
     {
@@ -97,6 +103,22 @@
     },
     {
       "name": "Dialogas turi pavadinimą ir tekstinių klaidų sritį",
+      "passed": true
+    },
+    {
+      "name": "Tuščio sąrašo pranešimas atskirtas nuo paieškos neradimo",
+      "passed": true
+    },
+    {
+      "name": "Vizito keitimo forma siūlo tik to paties kliento automobilius",
+      "passed": true
+    },
+    {
+      "name": "Naujo vizito forma leidžia rinktis visų aktyvių klientų automobilius",
+      "passed": true
+    },
+    {
+      "name": "Pranešimo perdavimo būsena vienoda ir aiškiai pažymėta kaip imitacija",
       "passed": true
     },
     {
