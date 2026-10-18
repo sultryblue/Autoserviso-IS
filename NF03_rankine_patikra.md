@@ -1,3 +1,7 @@
+# Papildoma rankinė klaviatūros patikra
+
+2026-10-18 naudotoja pranešė apie Tab, Enter ir Esc patikrą realiai paleistoje programoje prieš galutines laiko pataisas. Rezultatas ir jo apimtis: `manual_keyboard_result_20261018.json`. Tai ne viso aptarnavimo proceso patvirtinimas.
+
 # NF-03: likusi tiesioginės naršyklės ir serverio patikra
 
 **Būklė: šis scenarijus dar neatliktas.** Dokumentuoti 24 Chromium bandymai patvirtina atvaizdavimą ir valdiklių pasiekiamumą, o 504 funkcinės patikros – programos taisykles. Šis lapas skirtas likusiam pilnam veiksmų atlikimui klaviatūra; faktinių rezultatų stulpelis pildomas atlikus bandymą.

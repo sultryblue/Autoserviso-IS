@@ -1,6 +1,6 @@
 {
-  "executed_at": "2026-10-16T08:30:25",
-  "environment": "Python 3.13.5",
+  "executed_at": "2026-10-18T19:43:32",
+  "environment": "Python 3.12.14",
   "type": "HTTP ir duomenų vientisumo testai vietinėje laikinoje SQLite bazėje",
   "tests": [
     {
@@ -12,7 +12,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.77
+      "duration_ms": 1.12
     },
     {
       "id": "TA-02",
@@ -23,7 +23,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 72.02
+      "duration_ms": 40.47
     },
     {
       "id": "TA-03",
@@ -34,7 +34,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 91.19
+      "duration_ms": 37.62
     },
     {
       "id": "TA-04",
@@ -45,7 +45,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.61
+      "duration_ms": 1.48
     },
     {
       "id": "TA-05",
@@ -56,7 +56,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.59
+      "duration_ms": 4.23
     },
     {
       "id": "TA-06",
@@ -67,7 +67,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 13.63
+      "duration_ms": 3.37
     },
     {
       "id": "TA-07",
@@ -78,7 +78,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.18
+      "duration_ms": 2.47
     },
     {
       "id": "TA-08",
@@ -89,7 +89,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.13
+      "duration_ms": 11.93
     },
     {
       "id": "TA-09",
@@ -100,7 +100,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.13
+      "duration_ms": 1.27
     },
     {
       "id": "TA-10",
@@ -111,7 +111,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 11.05
+      "duration_ms": 6.57
     },
     {
       "id": "TA-11",
@@ -122,7 +122,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.3
+      "duration_ms": 3.47
     },
     {
       "id": "TA-12",
@@ -133,7 +133,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.44
+      "duration_ms": 3.03
     },
     {
       "id": "TA-13",
@@ -144,7 +144,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.85
+      "duration_ms": 1.28
     },
     {
       "id": "TA-14",
@@ -155,7 +155,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.11
+      "duration_ms": 3.12
     },
     {
       "id": "TA-15",
@@ -166,7 +166,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.6
+      "duration_ms": 6.06
     },
     {
       "id": "TA-16",
@@ -177,7 +177,7 @@
       "expected": "8500",
       "result": "Gauta: 8500. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.51
+      "duration_ms": 1.67
     },
     {
       "id": "TA-17",
@@ -188,7 +188,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.32
+      "duration_ms": 1.56
     },
     {
       "id": "TA-18",
@@ -199,7 +199,7 @@
       "expected": "1",
       "result": "Gauta: 1. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.25
+      "duration_ms": 1.59
     },
     {
       "id": "TA-19",
@@ -210,7 +210,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 13.4
+      "duration_ms": 11.59
     },
     {
       "id": "TA-20",
@@ -221,7 +221,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.59
+      "duration_ms": 1.23
     },
     {
       "id": "TA-21",
@@ -232,7 +232,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.69
+      "duration_ms": 3.88
     },
     {
       "id": "TA-22",
@@ -243,7 +243,7 @@
       "expected": "(200, 'Patvirtinta')",
       "result": "Gauta: (200, 'Patvirtinta'). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.66
+      "duration_ms": 4.94
     },
     {
       "id": "TA-23",
@@ -254,7 +254,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.06
+      "duration_ms": 1.46
     },
     {
       "id": "TA-24",
@@ -265,7 +265,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.72
+      "duration_ms": 3.74
     },
     {
       "id": "TA-25",
@@ -276,7 +276,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.48
+      "duration_ms": 1.38
     },
     {
       "id": "TA-26",
@@ -287,7 +287,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.32
+      "duration_ms": 3.71
     },
     {
       "id": "TA-27",
@@ -298,7 +298,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 17.72
+      "duration_ms": 3.12
     },
     {
       "id": "TA-28",
@@ -309,7 +309,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.77
+      "duration_ms": 3.79
     },
     {
       "id": "TA-29",
@@ -320,7 +320,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.77
+      "duration_ms": 1.28
     },
     {
       "id": "TA-30",
@@ -331,7 +331,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.72
+      "duration_ms": 3.41
     },
     {
       "id": "TA-31",
@@ -342,7 +342,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.47
+      "duration_ms": 3.13
     },
     {
       "id": "TA-32",
@@ -353,7 +353,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.37
+      "duration_ms": 2.89
     },
     {
       "id": "TA-33",
@@ -364,7 +364,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.42
+      "duration_ms": 7.28
     },
     {
       "id": "TA-34",
@@ -375,7 +375,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.2
+      "duration_ms": 3.58
     },
     {
       "id": "TA-35",
@@ -386,7 +386,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.39
+      "duration_ms": 3.08
     },
     {
       "id": "TA-36",
@@ -397,7 +397,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.97
+      "duration_ms": 3.24
     },
     {
       "id": "TA-37",
@@ -408,7 +408,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 72.33
+      "duration_ms": 40.33
     },
     {
       "id": "TA-38",
@@ -419,7 +419,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.71
+      "duration_ms": 6.06
     },
     {
       "id": "TA-39",
@@ -430,7 +430,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.03
+      "duration_ms": 2.18
     },
     {
       "id": "TA-40",
@@ -441,7 +441,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 10.87
+      "duration_ms": 1.72
     },
     {
       "id": "TA-41",
@@ -452,7 +452,7 @@
       "expected": "Uždarytas",
       "result": "Gauta: Uždarytas. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.84
+      "duration_ms": 0.52
     },
     {
       "id": "TA-42",
@@ -463,7 +463,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 75.28
+      "duration_ms": 41.24
     },
     {
       "id": "TA-43",
@@ -474,7 +474,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.61
+      "duration_ms": 1.4
     },
     {
       "id": "TA-44",
@@ -485,7 +485,7 @@
       "expected": "[2]",
       "result": "Gauta: [2]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.83
+      "duration_ms": 1.64
     },
     {
       "id": "TA-45",
@@ -496,7 +496,7 @@
       "expected": "['appointments', 'cars', 'client', 'csrf', 'decisions', 'estimates', 'lines', 'orders', 'payments', 'tasks', 'user']",
       "result": "Gauta: ['appointments', 'cars', 'client', 'csrf', 'decisions', 'estimates', 'lines', 'orders', 'payments', 'tasks', 'user']. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.29
+      "duration_ms": 1.23
     },
     {
       "id": "TA-46",
@@ -507,7 +507,7 @@
       "expected": "[3]",
       "result": "Gauta: [3]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.58
+      "duration_ms": 2.02
     },
     {
       "id": "TA-47",
@@ -518,7 +518,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.46
+      "duration_ms": 1.28
     },
     {
       "id": "TA-48",
@@ -529,7 +529,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.04
+      "duration_ms": 1.56
     },
     {
       "id": "TA-49",
@@ -540,7 +540,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.94
+      "duration_ms": 1.3
     },
     {
       "id": "TA-50",
@@ -551,7 +551,7 @@
       "expected": "OWN01",
       "result": "Gauta: OWN01. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.05
+      "duration_ms": 1.53
     },
     {
       "id": "TA-51",
@@ -562,7 +562,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.64
+      "duration_ms": 3.66
     },
     {
       "id": "TA-52",
@@ -573,7 +573,7 @@
       "expected": "new@example.com",
       "result": "Gauta: new@example.com. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.38
+      "duration_ms": 1.65
     },
     {
       "id": "TA-53",
@@ -584,7 +584,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.87
+      "duration_ms": 1.56
     },
     {
       "id": "TA-54",
@@ -595,7 +595,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.01
+      "duration_ms": 1.22
     },
     {
       "id": "TA-55",
@@ -606,7 +606,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.57
+      "duration_ms": 3.82
     },
     {
       "id": "TA-56",
@@ -617,7 +617,7 @@
       "expected": "OWN01",
       "result": "Gauta: OWN01. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.23
+      "duration_ms": 1.42
     },
     {
       "id": "TA-57",
@@ -628,7 +628,7 @@
       "expected": "(200, (2, 'OWN02'))",
       "result": "Gauta: (200, (2, 'OWN02')). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.59
+      "duration_ms": 4.73
     },
     {
       "id": "TA-58",
@@ -639,7 +639,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.91
+      "duration_ms": 5.81
     },
     {
       "id": "TA-59",
@@ -650,7 +650,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.13
+      "duration_ms": 1.58
     },
     {
       "id": "TA-60",
@@ -661,7 +661,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.75
+      "duration_ms": 1.3
     },
     {
       "id": "TA-61",
@@ -672,7 +672,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.03
+      "duration_ms": 1.18
     },
     {
       "id": "TA-62",
@@ -683,7 +683,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.48
+      "duration_ms": 2.49
     },
     {
       "id": "TA-63",
@@ -694,7 +694,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.98
+      "duration_ms": 1.37
     },
     {
       "id": "TA-64",
@@ -705,7 +705,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.59
+      "duration_ms": 1.21
     },
     {
       "id": "TA-65",
@@ -716,7 +716,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.79
+      "duration_ms": 1.18
     },
     {
       "id": "TA-66",
@@ -727,7 +727,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 21.23
+      "duration_ms": 8.26
     },
     {
       "id": "TA-67",
@@ -738,7 +738,7 @@
       "expected": "Patvirtintas",
       "result": "Gauta: Patvirtintas. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.11
+      "duration_ms": 1.42
     },
     {
       "id": "TA-68",
@@ -749,7 +749,7 @@
       "expected": "[4]",
       "result": "Gauta: [4]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.82
+      "duration_ms": 1.51
     },
     {
       "id": "TA-69",
@@ -760,7 +760,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.7
+      "duration_ms": 1.7
     },
     {
       "id": "TA-70",
@@ -771,7 +771,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.99
+      "duration_ms": 4.77
     },
     {
       "id": "TA-71",
@@ -782,7 +782,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 11.74
+      "duration_ms": 8.28
     },
     {
       "id": "TA-72",
@@ -793,7 +793,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.13
+      "duration_ms": 3.67
     },
     {
       "id": "TA-73",
@@ -804,7 +804,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.44
+      "duration_ms": 1.75
     },
     {
       "id": "TA-74",
@@ -815,7 +815,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.56
+      "duration_ms": 1.36
     },
     {
       "id": "TA-75",
@@ -826,7 +826,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.86
+      "duration_ms": 3.31
     },
     {
       "id": "TA-76",
@@ -837,7 +837,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.17
+      "duration_ms": 1.42
     },
     {
       "id": "TA-77",
@@ -848,7 +848,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.8
+      "duration_ms": 1.86
     },
     {
       "id": "TA-78",
@@ -859,7 +859,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.51
+      "duration_ms": 5.61
     },
     {
       "id": "TA-79",
@@ -870,7 +870,7 @@
       "expected": "Naujas",
       "result": "Gauta: Naujas. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.64
+      "duration_ms": 1.51
     },
     {
       "id": "TA-80",
@@ -881,7 +881,7 @@
       "expected": "[3]",
       "result": "Gauta: [3]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.43
+      "duration_ms": 1.49
     },
     {
       "id": "TA-81",
@@ -892,7 +892,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.34
+      "duration_ms": 1.52
     },
     {
       "id": "TA-82",
@@ -903,7 +903,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.01
+      "duration_ms": 1.37
     },
     {
       "id": "TA-83",
@@ -914,7 +914,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.34
+      "duration_ms": 1.13
     },
     {
       "id": "TA-84",
@@ -925,7 +925,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.53
+      "duration_ms": 2.94
     },
     {
       "id": "TA-85",
@@ -936,7 +936,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.46
+      "duration_ms": 3.68
     },
     {
       "id": "TA-86",
@@ -947,7 +947,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.83
+      "duration_ms": 1.29
     },
     {
       "id": "TA-87",
@@ -958,7 +958,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.68
+      "duration_ms": 1.3
     },
     {
       "id": "TA-88",
@@ -969,7 +969,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.79
+      "duration_ms": 1.09
     },
     {
       "id": "TA-89",
@@ -980,7 +980,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.23
+      "duration_ms": 1.2
     },
     {
       "id": "TA-90",
@@ -991,7 +991,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.99
+      "duration_ms": 1.23
     },
     {
       "id": "TA-91",
@@ -1002,7 +1002,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.6
+      "duration_ms": 1.14
     },
     {
       "id": "TA-92",
@@ -1013,7 +1013,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.69
+      "duration_ms": 1.09
     },
     {
       "id": "TA-93",
@@ -1024,7 +1024,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.36
+      "duration_ms": 3.17
     },
     {
       "id": "TA-94",
@@ -1035,7 +1035,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.34
+      "duration_ms": 1.25
     },
     {
       "id": "TA-95",
@@ -1046,7 +1046,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.02
+      "duration_ms": 3.19
     },
     {
       "id": "TA-96",
@@ -1057,7 +1057,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.39
+      "duration_ms": 1.09
     },
     {
       "id": "TA-97",
@@ -1068,7 +1068,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.31
+      "duration_ms": 4.88
     },
     {
       "id": "TA-98",
@@ -1079,7 +1079,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 69.43
+      "duration_ms": 36.99
     },
     {
       "id": "TA-99",
@@ -1090,7 +1090,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 10.44
+      "duration_ms": 4.07
     },
     {
       "id": "TA-100",
@@ -1101,7 +1101,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.3
+      "duration_ms": 1.17
     },
     {
       "id": "TA-101",
@@ -1112,7 +1112,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.84
+      "duration_ms": 1.04
     },
     {
       "id": "TA-102",
@@ -1123,7 +1123,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.16
+      "duration_ms": 0.56
     },
     {
       "id": "TA-103",
@@ -1134,7 +1134,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.16
+      "duration_ms": 0.51
     },
     {
       "id": "TA-104",
@@ -1145,7 +1145,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.83
+      "duration_ms": 0.44
     },
     {
       "id": "TA-105",
@@ -1156,7 +1156,7 @@
       "expected": "OTHER01",
       "result": "Gauta: OTHER01. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.53
+      "duration_ms": 1.7
     },
     {
       "id": "TA-106",
@@ -1167,7 +1167,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.91
+      "duration_ms": 1.83
     },
     {
       "id": "TA-107",
@@ -1178,7 +1178,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.62
+      "duration_ms": 1.35
     },
     {
       "id": "TA-108",
@@ -1189,7 +1189,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.07
+      "duration_ms": 3.46
     },
     {
       "id": "TA-109",
@@ -1200,7 +1200,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.14
+      "duration_ms": 1.27
     },
     {
       "id": "TA-110",
@@ -1211,7 +1211,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.73
+      "duration_ms": 3.86
     },
     {
       "id": "TA-111",
@@ -1222,7 +1222,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.84
+      "duration_ms": 1.36
     },
     {
       "id": "TA-112",
@@ -1233,7 +1233,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.9
+      "duration_ms": 3.15
     },
     {
       "id": "TA-113",
@@ -1244,7 +1244,7 @@
       "expected": "[(2, 1)]",
       "result": "Gauta: [(2, 1)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.83
+      "duration_ms": 0.63
     },
     {
       "id": "TA-114",
@@ -1255,7 +1255,7 @@
       "expected": "1",
       "result": "Gauta: 1. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.64
+      "duration_ms": 0.4
     },
     {
       "id": "TA-115",
@@ -1266,7 +1266,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.92
+      "duration_ms": 1.26
     },
     {
       "id": "TA-116",
@@ -1277,7 +1277,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.35
+      "duration_ms": 1.65
     },
     {
       "id": "TA-117",
@@ -1288,7 +1288,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.41
+      "duration_ms": 3.16
     },
     {
       "id": "TA-118",
@@ -1299,7 +1299,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.78
+      "duration_ms": 0.64
     },
     {
       "id": "TA-119",
@@ -1310,7 +1310,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.1
+      "duration_ms": 1.19
     },
     {
       "id": "TA-120",
@@ -1321,7 +1321,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.31
+      "duration_ms": 1.43
     },
     {
       "id": "TA-121",
@@ -1332,7 +1332,7 @@
       "expected": "[(1, 'Rengiama', 10000)]",
       "result": "Gauta: [(1, 'Rengiama', 10000)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.81
+      "duration_ms": 0.8
     },
     {
       "id": "TA-122",
@@ -1343,7 +1343,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.4
+      "duration_ms": 4.32
     },
     {
       "id": "TA-123",
@@ -1354,7 +1354,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.92
+      "duration_ms": 1.54
     },
     {
       "id": "TA-124",
@@ -1365,7 +1365,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.74
+      "duration_ms": 8.14
     },
     {
       "id": "TA-125",
@@ -1376,7 +1376,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.55
+      "duration_ms": 1.28
     },
     {
       "id": "TA-126",
@@ -1387,7 +1387,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.71
+      "duration_ms": 9.26
     },
     {
       "id": "TA-127",
@@ -1398,7 +1398,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.02
+      "duration_ms": 1.86
     },
     {
       "id": "TA-128",
@@ -1409,7 +1409,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.84
+      "duration_ms": 0.67
     },
     {
       "id": "TA-129",
@@ -1420,7 +1420,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.19
+      "duration_ms": 0.63
     },
     {
       "id": "TA-130",
@@ -1431,7 +1431,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.28
+      "duration_ms": 0.48
     },
     {
       "id": "TA-131",
@@ -1442,7 +1442,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.97
+      "duration_ms": 0.41
     },
     {
       "id": "TA-132",
@@ -1453,7 +1453,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.77
+      "duration_ms": 0.66
     },
     {
       "id": "TA-133",
@@ -1464,7 +1464,7 @@
       "expected": "10000",
       "result": "Gauta: 10000. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.22
+      "duration_ms": 1.52
     },
     {
       "id": "TA-134",
@@ -1475,7 +1475,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.32
+      "duration_ms": 1.52
     },
     {
       "id": "TA-135",
@@ -1486,7 +1486,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.09
+      "duration_ms": 1.55
     },
     {
       "id": "TA-136",
@@ -1497,7 +1497,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.98
+      "duration_ms": 1.09
     },
     {
       "id": "TA-137",
@@ -1508,7 +1508,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.0
+      "duration_ms": 1.22
     },
     {
       "id": "TA-138",
@@ -1519,7 +1519,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.07
+      "duration_ms": 5.14
     },
     {
       "id": "TA-139",
@@ -1530,7 +1530,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.02
+      "duration_ms": 1.71
     },
     {
       "id": "TA-140",
@@ -1541,7 +1541,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.88
+      "duration_ms": 0.7
     },
     {
       "id": "TA-141",
@@ -1552,7 +1552,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.77
+      "duration_ms": 0.61
     },
     {
       "id": "TA-142",
@@ -1563,7 +1563,7 @@
       "expected": "1",
       "result": "Gauta: 1. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.85
+      "duration_ms": 0.65
     },
     {
       "id": "TA-143",
@@ -1574,7 +1574,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.09
+      "duration_ms": 1.27
     },
     {
       "id": "TA-144",
@@ -1585,7 +1585,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.99
+      "duration_ms": 1.18
     },
     {
       "id": "TA-145",
@@ -1596,7 +1596,7 @@
       "expected": "[(10,)]",
       "result": "Gauta: [(10,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.81
+      "duration_ms": 0.59
     },
     {
       "id": "TA-146",
@@ -1607,7 +1607,7 @@
       "expected": "[(None,)]",
       "result": "Gauta: [(None,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.01
+      "duration_ms": 0.51
     },
     {
       "id": "TA-147",
@@ -1618,7 +1618,7 @@
       "expected": "[(15000,)]",
       "result": "Gauta: [(15000,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.93
+      "duration_ms": 0.86
     },
     {
       "id": "TA-148",
@@ -1629,7 +1629,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.78
+      "duration_ms": 0.65
     },
     {
       "id": "TA-149",
@@ -1640,7 +1640,7 @@
       "expected": "[('Derinamas',)]",
       "result": "Gauta: [('Derinamas',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.07
+      "duration_ms": 1.02
     },
     {
       "id": "TA-150",
@@ -1651,7 +1651,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.89
+      "duration_ms": 5.12
     },
     {
       "id": "TA-151",
@@ -1662,7 +1662,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.69
+      "duration_ms": 3.84
     },
     {
       "id": "TA-152",
@@ -1673,7 +1673,7 @@
       "expected": "15000",
       "result": "Gauta: 15000. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.45
+      "duration_ms": 1.5
     },
     {
       "id": "TA-153",
@@ -1684,7 +1684,7 @@
       "expected": "1",
       "result": "Gauta: 1. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.8
+      "duration_ms": 0.47
     },
     {
       "id": "TA-154",
@@ -1695,7 +1695,7 @@
       "expected": "[('Suplanuotas',)]",
       "result": "Gauta: [('Suplanuotas',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.68
+      "duration_ms": 0.46
     },
     {
       "id": "TA-155",
@@ -1706,7 +1706,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.99
+      "duration_ms": 0.44
     },
     {
       "id": "TA-156",
@@ -1717,7 +1717,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 10.31
+      "duration_ms": 3.69
     },
     {
       "id": "TA-157",
@@ -1728,7 +1728,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.02
+      "duration_ms": 1.16
     },
     {
       "id": "TA-158",
@@ -1739,7 +1739,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 21.82
+      "duration_ms": 2.57
     },
     {
       "id": "TA-159",
@@ -1750,7 +1750,7 @@
       "expected": "[('Vykdomas',)]",
       "result": "Gauta: [('Vykdomas',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.0
+      "duration_ms": 0.76
     },
     {
       "id": "TA-160",
@@ -1761,7 +1761,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 11.82
+      "duration_ms": 4.54
     },
     {
       "id": "TA-161",
@@ -1772,7 +1772,7 @@
       "expected": "15000",
       "result": "Gauta: 15000. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.38
+      "duration_ms": 7.41
     },
     {
       "id": "TA-162",
@@ -1783,7 +1783,7 @@
       "expected": "[('Vykdomas',)]",
       "result": "Gauta: [('Vykdomas',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.01
+      "duration_ms": 0.51
     },
     {
       "id": "TA-163",
@@ -1794,7 +1794,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.19
+      "duration_ms": 3.01
     },
     {
       "id": "TA-164",
@@ -1805,7 +1805,7 @@
       "expected": "3",
       "result": "Gauta: 3. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.74
+      "duration_ms": 1.87
     },
     {
       "id": "TA-165",
@@ -1816,7 +1816,7 @@
       "expected": "[(152,), (1,)]",
       "result": "Gauta: [(152,), (1,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.85
+      "duration_ms": 0.57
     },
     {
       "id": "TA-166",
@@ -1827,7 +1827,7 @@
       "expected": "[('integer', 'integer', 'integer')]",
       "result": "Gauta: [('integer', 'integer', 'integer')]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.66
+      "duration_ms": 0.53
     },
     {
       "id": "TA-167",
@@ -1838,7 +1838,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.16
+      "duration_ms": 1.41
     },
     {
       "id": "TA-168",
@@ -1849,7 +1849,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.02
+      "duration_ms": 1.9
     },
     {
       "id": "TA-169",
@@ -1860,7 +1860,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.11
+      "duration_ms": 1.25
     },
     {
       "id": "TA-170",
@@ -1871,7 +1871,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.25
+      "duration_ms": 1.32
     },
     {
       "id": "TA-171",
@@ -1882,7 +1882,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.15
+      "duration_ms": 3.17
     },
     {
       "id": "TA-172",
@@ -1893,7 +1893,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.97
+      "duration_ms": 0.96
     },
     {
       "id": "TA-173",
@@ -1904,7 +1904,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.98
+      "duration_ms": 1.4
     },
     {
       "id": "TA-174",
@@ -1915,7 +1915,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.32
+      "duration_ms": 1.54
     },
     {
       "id": "TA-175",
@@ -1926,7 +1926,7 @@
       "expected": "(200, 'Vykdomas')",
       "result": "Gauta: (200, 'Vykdomas'). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 13.05
+      "duration_ms": 4.7
     },
     {
       "id": "TA-176",
@@ -1937,7 +1937,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.09
+      "duration_ms": 1.22
     },
     {
       "id": "TA-177",
@@ -1959,7 +1959,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.96
+      "duration_ms": 1.5
     },
     {
       "id": "TA-179",
@@ -1970,7 +1970,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.05
+      "duration_ms": 9.91
     },
     {
       "id": "TA-180",
@@ -1981,7 +1981,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.34
+      "duration_ms": 3.75
     },
     {
       "id": "TA-181",
@@ -1992,7 +1992,7 @@
       "expected": "0",
       "result": "Gauta: 0. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.3
+      "duration_ms": 4.93
     },
     {
       "id": "TA-182",
@@ -2003,7 +2003,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 10.36
+      "duration_ms": 4.88
     },
     {
       "id": "TA-183",
@@ -2014,7 +2014,7 @@
       "expected": "('Patvirtinta', 10000)",
       "result": "Gauta: ('Patvirtinta', 10000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.23
+      "duration_ms": 4.0
     },
     {
       "id": "TA-184",
@@ -2025,7 +2025,7 @@
       "expected": "[('Vykdomas',)]",
       "result": "Gauta: [('Vykdomas',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.28
+      "duration_ms": 0.48
     },
     {
       "id": "TA-185",
@@ -2036,7 +2036,7 @@
       "expected": "1",
       "result": "Gauta: 1. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.28
+      "duration_ms": 7.05
     },
     {
       "id": "TA-186",
@@ -2047,7 +2047,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.19
+      "duration_ms": 4.38
     },
     {
       "id": "TA-187",
@@ -2058,7 +2058,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.52
+      "duration_ms": 3.76
     },
     {
       "id": "TA-188",
@@ -2069,7 +2069,7 @@
       "expected": "(15000, 0, 15000, 0, 15000)",
       "result": "Gauta: (15000, 0, 15000, 0, 15000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.9
+      "duration_ms": 1.41
     },
     {
       "id": "TA-189",
@@ -2080,7 +2080,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.53
+      "duration_ms": 2.34
     },
     {
       "id": "TA-190",
@@ -2091,7 +2091,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.23
+      "duration_ms": 1.9
     },
     {
       "id": "TA-191",
@@ -2102,7 +2102,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.55
+      "duration_ms": 1.24
     },
     {
       "id": "TA-192",
@@ -2113,7 +2113,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.36
+      "duration_ms": 2.18
     },
     {
       "id": "TA-193",
@@ -2124,7 +2124,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.07
+      "duration_ms": 1.64
     },
     {
       "id": "TA-194",
@@ -2135,7 +2135,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.8
+      "duration_ms": 1.39
     },
     {
       "id": "TA-195",
@@ -2146,7 +2146,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.02
+      "duration_ms": 1.46
     },
     {
       "id": "TA-196",
@@ -2157,7 +2157,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.84
+      "duration_ms": 5.84
     },
     {
       "id": "TA-197",
@@ -2168,7 +2168,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.2
+      "duration_ms": 1.88
     },
     {
       "id": "TA-198",
@@ -2179,7 +2179,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.94
+      "duration_ms": 3.25
     },
     {
       "id": "TA-199",
@@ -2190,7 +2190,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.17
+      "duration_ms": 1.71
     },
     {
       "id": "TA-200",
@@ -2201,7 +2201,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.84
+      "duration_ms": 1.33
     },
     {
       "id": "TA-201",
@@ -2212,7 +2212,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.89
+      "duration_ms": 1.32
     },
     {
       "id": "TA-202",
@@ -2223,7 +2223,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.79
+      "duration_ms": 1.27
     },
     {
       "id": "TA-203",
@@ -2234,7 +2234,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.37
+      "duration_ms": 1.18
     },
     {
       "id": "TA-204",
@@ -2245,7 +2245,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.74
+      "duration_ms": 8.49
     },
     {
       "id": "TA-205",
@@ -2256,7 +2256,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.43
+      "duration_ms": 1.66
     },
     {
       "id": "TA-206",
@@ -2267,7 +2267,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.53
+      "duration_ms": 1.62
     },
     {
       "id": "TA-207",
@@ -2278,7 +2278,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.85
+      "duration_ms": 1.71
     },
     {
       "id": "TA-208",
@@ -2289,7 +2289,7 @@
       "expected": "(15000, 0, 15000, 8000, 7000)",
       "result": "Gauta: (15000, 0, 15000, 8000, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.74
+      "duration_ms": 1.64
     },
     {
       "id": "TA-209",
@@ -2300,7 +2300,7 @@
       "expected": "3",
       "result": "Gauta: 3. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.77
+      "duration_ms": 1.92
     },
     {
       "id": "TA-210",
@@ -2311,7 +2311,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.57
+      "duration_ms": 2.06
     },
     {
       "id": "TA-211",
@@ -2322,7 +2322,7 @@
       "expected": "(15000, 0, 15000, 8000, 7000)",
       "result": "Gauta: (15000, 0, 15000, 8000, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.11
+      "duration_ms": 1.38
     },
     {
       "id": "TA-212",
@@ -2333,7 +2333,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.69
+      "duration_ms": 1.3
     },
     {
       "id": "TA-213",
@@ -2344,7 +2344,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.14
+      "duration_ms": 1.4
     },
     {
       "id": "TA-214",
@@ -2355,7 +2355,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.97
+      "duration_ms": 1.25
     },
     {
       "id": "TA-215",
@@ -2366,7 +2366,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.71
+      "duration_ms": 1.79
     },
     {
       "id": "TA-216",
@@ -2377,7 +2377,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.02
+      "duration_ms": 1.43
     },
     {
       "id": "TA-217",
@@ -2388,7 +2388,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.13
+      "duration_ms": 1.42
     },
     {
       "id": "TA-218",
@@ -2399,7 +2399,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.39
+      "duration_ms": 1.46
     },
     {
       "id": "TA-219",
@@ -2410,7 +2410,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.01
+      "duration_ms": 4.12
     },
     {
       "id": "TA-220",
@@ -2421,7 +2421,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.64
+      "duration_ms": 8.72
     },
     {
       "id": "TA-221",
@@ -2432,7 +2432,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 9.47
+      "duration_ms": 4.84
     },
     {
       "id": "TA-222",
@@ -2443,7 +2443,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.31
+      "duration_ms": 9.66
     },
     {
       "id": "TA-223",
@@ -2454,7 +2454,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.76
+      "duration_ms": 18.16
     },
     {
       "id": "TA-224",
@@ -2465,7 +2465,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.12
+      "duration_ms": 6.85
     },
     {
       "id": "TA-225",
@@ -2476,7 +2476,7 @@
       "expected": "(15000, 0, 15000, 8000, 7000)",
       "result": "Gauta: (15000, 0, 15000, 8000, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.62
+      "duration_ms": 4.89
     },
     {
       "id": "TA-226",
@@ -2487,7 +2487,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.52
+      "duration_ms": 4.79
     },
     {
       "id": "TA-227",
@@ -2498,7 +2498,7 @@
       "expected": "(15000, 0, 15000, 8000, 7000)",
       "result": "Gauta: (15000, 0, 15000, 8000, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.66
+      "duration_ms": 1.61
     },
     {
       "id": "TA-228",
@@ -2509,7 +2509,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 9.96
+      "duration_ms": 7.69
     },
     {
       "id": "TA-229",
@@ -2520,7 +2520,7 @@
       "expected": "(15000, 8000, 7000, 0, 7000)",
       "result": "Gauta: (15000, 8000, 7000, 0, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.15
+      "duration_ms": 1.95
     },
     {
       "id": "TA-230",
@@ -2531,7 +2531,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.76
+      "duration_ms": 2.32
     },
     {
       "id": "TA-231",
@@ -2542,7 +2542,7 @@
       "expected": "[(1,)]",
       "result": "Gauta: [(1,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.08
+      "duration_ms": 0.54
     },
     {
       "id": "TA-232",
@@ -2553,7 +2553,7 @@
       "expected": "(15000, 8000, 7000, 0, 7000)",
       "result": "Gauta: (15000, 8000, 7000, 0, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.91
+      "duration_ms": 1.6
     },
     {
       "id": "TA-233",
@@ -2564,7 +2564,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.72
+      "duration_ms": 4.65
     },
     {
       "id": "TA-234",
@@ -2575,7 +2575,7 @@
       "expected": "(15000, 8000, 7000, 0, 7000)",
       "result": "Gauta: (15000, 8000, 7000, 0, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.92
+      "duration_ms": 1.72
     },
     {
       "id": "TA-235",
@@ -2586,7 +2586,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.8
+      "duration_ms": 0.77
     },
     {
       "id": "TA-236",
@@ -2594,10 +2594,10 @@
       "requirement": "NF-15",
       "description": "Techniniai laukai ir kortelės duomenys negrąžinami klientui",
       "steps": "Techniniai laukai ir kortelės duomenys negrąžinami klientui",
-      "expected": "{'created_at', 'method', 'resolved_at', 'amount_cents', 'order_id', 'id', 'status'}",
-      "result": "Gauta: {'created_at', 'method', 'resolved_at', 'amount_cents', 'order_id', 'id', 'status'}. Atitiko tikėtiną rezultatą.",
+      "expected": "{'status', 'created_at', 'method', 'id', 'resolved_at', 'amount_cents', 'order_id'}",
+      "result": "Gauta: {'status', 'created_at', 'method', 'id', 'resolved_at', 'amount_cents', 'order_id'}. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.84
+      "duration_ms": 1.65
     },
     {
       "id": "TA-237",
@@ -2608,7 +2608,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.95
+      "duration_ms": 1.78
     },
     {
       "id": "TA-238",
@@ -2619,7 +2619,7 @@
       "expected": "(15000, 8000, 7000, 7000, 0)",
       "result": "Gauta: (15000, 8000, 7000, 7000, 0). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.95
+      "duration_ms": 1.8
     },
     {
       "id": "TA-239",
@@ -2630,7 +2630,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.58
+      "duration_ms": 1.54
     },
     {
       "id": "TA-240",
@@ -2641,7 +2641,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.37
+      "duration_ms": 11.96
     },
     {
       "id": "TA-241",
@@ -2652,7 +2652,7 @@
       "expected": "(15000, 8000, 7000, 0, 7000)",
       "result": "Gauta: (15000, 8000, 7000, 0, 7000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.0
+      "duration_ms": 2.17
     },
     {
       "id": "TA-242",
@@ -2663,7 +2663,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.66
+      "duration_ms": 4.17
     },
     {
       "id": "TA-243",
@@ -2674,7 +2674,7 @@
       "expected": "[('Vykdomas',)]",
       "result": "Gauta: [('Vykdomas',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.11
+      "duration_ms": 0.65
     },
     {
       "id": "TA-244",
@@ -2685,7 +2685,7 @@
       "expected": "[('Nesėkmingas', 1)]",
       "result": "Gauta: [('Nesėkmingas', 1)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.24
+      "duration_ms": 0.49
     },
     {
       "id": "TA-245",
@@ -2696,7 +2696,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.88
+      "duration_ms": 2.39
     },
     {
       "id": "TA-246",
@@ -2707,7 +2707,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.47
+      "duration_ms": 3.54
     },
     {
       "id": "TA-247",
@@ -2718,7 +2718,7 @@
       "expected": "(15000, 10000, 5000, 0, 5000)",
       "result": "Gauta: (15000, 10000, 5000, 0, 5000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.86
+      "duration_ms": 1.72
     },
     {
       "id": "TA-248",
@@ -2729,7 +2729,7 @@
       "expected": "[('Vietoje', 'Sėkmingas', None, 2)]",
       "result": "Gauta: [('Vietoje', 'Sėkmingas', None, 2)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.94
+      "duration_ms": 0.74
     },
     {
       "id": "TA-249",
@@ -2740,7 +2740,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.73
+      "duration_ms": 0.47
     },
     {
       "id": "TA-250",
@@ -2751,7 +2751,7 @@
       "expected": "5",
       "result": "Gauta: 5. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.8
+      "duration_ms": 1.71
     },
     {
       "id": "TA-251",
@@ -2762,7 +2762,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.31
+      "duration_ms": 1.42
     },
     {
       "id": "TA-252",
@@ -2773,7 +2773,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.42
+      "duration_ms": 1.57
     },
     {
       "id": "TA-253",
@@ -2795,7 +2795,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 12.71
+      "duration_ms": 24.32
     },
     {
       "id": "TA-255",
@@ -2806,7 +2806,7 @@
       "expected": "Prieš perduodant automobilį ir uždarant užsakymą reikia padengti visą likutį.",
       "result": "Gauta: Prieš perduodant automobilį ir uždarant užsakymą reikia padengti visą likutį.. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.24
+      "duration_ms": 6.21
     },
     {
       "id": "TA-256",
@@ -2817,7 +2817,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 9.23
+      "duration_ms": 8.39
     },
     {
       "id": "TA-257",
@@ -2828,7 +2828,7 @@
       "expected": "(15000, 15000, 0, 0, 0)",
       "result": "Gauta: (15000, 15000, 0, 0, 0). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.09
+      "duration_ms": 1.66
     },
     {
       "id": "TA-258",
@@ -2839,7 +2839,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.66
+      "duration_ms": 1.55
     },
     {
       "id": "TA-259",
@@ -2850,7 +2850,7 @@
       "expected": "Pirmiausia užregistruokite faktinį automobilio perdavimą.",
       "result": "Gauta: Pirmiausia užregistruokite faktinį automobilio perdavimą.. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.23
+      "duration_ms": 3.88
     },
     {
       "id": "TA-260",
@@ -2861,7 +2861,7 @@
       "expected": "Reikia išspręsti visas rengiamas arba pateiktas sąmatų versijas.",
       "result": "Gauta: Reikia išspręsti visas rengiamas arba pateiktas sąmatų versijas.. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.66
+      "duration_ms": 6.21
     },
     {
       "id": "TA-261",
@@ -2872,7 +2872,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.74
+      "duration_ms": 3.8
     },
     {
       "id": "TA-262",
@@ -2883,7 +2883,7 @@
       "expected": "(15000, 15000, 0, 0, 0)",
       "result": "Gauta: (15000, 15000, 0, 0, 0). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 20.03
+      "duration_ms": 1.55
     },
     {
       "id": "TA-263",
@@ -2894,7 +2894,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.06
+      "duration_ms": 3.51
     },
     {
       "id": "TA-264",
@@ -2905,7 +2905,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 9.07
+      "duration_ms": 3.24
     },
     {
       "id": "TA-265",
@@ -2916,7 +2916,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.51
+      "duration_ms": 3.12
     },
     {
       "id": "TA-266",
@@ -2927,7 +2927,7 @@
       "expected": "[('Paruoštas', 1, None)]",
       "result": "Gauta: [('Paruoštas', 1, None)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.16
+      "duration_ms": 0.61
     },
     {
       "id": "TA-267",
@@ -2938,7 +2938,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.98
+      "duration_ms": 0.44
     },
     {
       "id": "TA-268",
@@ -2949,7 +2949,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.16
+      "duration_ms": 3.99
     },
     {
       "id": "TA-269",
@@ -2960,7 +2960,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.74
+      "duration_ms": 1.21
     },
     {
       "id": "TA-270",
@@ -2971,7 +2971,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.7
+      "duration_ms": 1.37
     },
     {
       "id": "TA-271",
@@ -2982,7 +2982,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.87
+      "duration_ms": 3.94
     },
     {
       "id": "TA-272",
@@ -2993,7 +2993,7 @@
       "expected": "[('Uždarytas', 1, 1, 2)]",
       "result": "Gauta: [('Uždarytas', 1, 1, 2)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.16
+      "duration_ms": 0.58
     },
     {
       "id": "TA-273",
@@ -3004,7 +3004,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.78
+      "duration_ms": 3.33
     },
     {
       "id": "TA-274",
@@ -3015,7 +3015,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.49
+      "duration_ms": 1.48
     },
     {
       "id": "TA-275",
@@ -3026,7 +3026,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.22
+      "duration_ms": 4.4
     },
     {
       "id": "TA-276",
@@ -3037,7 +3037,7 @@
       "expected": "3",
       "result": "Gauta: 3. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.31
+      "duration_ms": 7.12
     },
     {
       "id": "TA-277",
@@ -3048,7 +3048,7 @@
       "expected": "[('integer',)]",
       "result": "Gauta: [('integer',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.27
+      "duration_ms": 0.5
     },
     {
       "id": "TA-278",
@@ -3059,7 +3059,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.78
+      "duration_ms": 0.5
     },
     {
       "id": "TA-279",
@@ -3070,7 +3070,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.19
+      "duration_ms": 0.43
     },
     {
       "id": "TA-280",
@@ -3081,7 +3081,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.37
+      "duration_ms": 0.41
     },
     {
       "id": "TA-281",
@@ -3092,7 +3092,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.9
+      "duration_ms": 0.62
     },
     {
       "id": "TA-282",
@@ -3103,7 +3103,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.05
+      "duration_ms": 0.4
     },
     {
       "id": "TA-283",
@@ -3114,7 +3114,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.17
+      "duration_ms": 0.44
     },
     {
       "id": "TA-284",
@@ -3125,7 +3125,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.95
+      "duration_ms": 0.38
     },
     {
       "id": "TA-285",
@@ -3136,7 +3136,7 @@
       "expected": "Reikia užbaigti visus patvirtintos apimties darbus.",
       "result": "Gauta: Reikia užbaigti visus patvirtintos apimties darbus.. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.31
+      "duration_ms": 3.83
     },
     {
       "id": "TA-286",
@@ -3147,7 +3147,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.97
+      "duration_ms": 8.92
     },
     {
       "id": "TA-287",
@@ -3158,7 +3158,7 @@
       "expected": "[('Derinamas',)]",
       "result": "Gauta: [('Derinamas',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.78
+      "duration_ms": 0.67
     },
     {
       "id": "TA-288",
@@ -3169,7 +3169,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.32
+      "duration_ms": 6.28
     },
     {
       "id": "TA-289",
@@ -3180,7 +3180,7 @@
       "expected": "(0, 0, 0, 0, 0)",
       "result": "Gauta: (0, 0, 0, 0, 0). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.87
+      "duration_ms": 1.63
     },
     {
       "id": "TA-290",
@@ -3191,7 +3191,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.21
+      "duration_ms": 1.36
     },
     {
       "id": "TA-291",
@@ -3202,7 +3202,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 9.53
+      "duration_ms": 5.92
     },
     {
       "id": "TA-292",
@@ -3213,7 +3213,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.77
+      "duration_ms": 3.8
     },
     {
       "id": "TA-293",
@@ -3224,7 +3224,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.21
+      "duration_ms": 3.59
     },
     {
       "id": "TA-294",
@@ -3235,7 +3235,7 @@
       "expected": "[200, 409]",
       "result": "Gauta: [200, 409]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 13.49
+      "duration_ms": 7.02
     },
     {
       "id": "TA-295",
@@ -3246,7 +3246,7 @@
       "expected": "(10000, 0, 10000, 8000, 2000)",
       "result": "Gauta: (10000, 0, 10000, 8000, 2000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.27
+      "duration_ms": 1.24
     },
     {
       "id": "TA-296",
@@ -3257,7 +3257,7 @@
       "expected": "[200, 200]",
       "result": "Gauta: [200, 200]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 12.42
+      "duration_ms": 7.54
     },
     {
       "id": "TA-297",
@@ -3268,7 +3268,7 @@
       "expected": "[(1,)]",
       "result": "Gauta: [(1,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.82
+      "duration_ms": 0.43
     },
     {
       "id": "TA-298",
@@ -3279,7 +3279,7 @@
       "expected": "[200, 200]",
       "result": "Gauta: [200, 200]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.95
+      "duration_ms": 10.57
     },
     {
       "id": "TA-299",
@@ -3290,7 +3290,7 @@
       "expected": "(10000, 1000, 9000, 0, 9000)",
       "result": "Gauta: (10000, 1000, 9000, 0, 9000). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.32
+      "duration_ms": 1.75
     },
     {
       "id": "TA-300",
@@ -3301,7 +3301,7 @@
       "expected": "[200, 409]",
       "result": "Gauta: [200, 409]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.32
+      "duration_ms": 12.37
     },
     {
       "id": "TA-301",
@@ -3312,7 +3312,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.12
+      "duration_ms": 7.14
     },
     {
       "id": "TA-302",
@@ -3323,7 +3323,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.31
+      "duration_ms": 0.65
     },
     {
       "id": "TA-303",
@@ -3334,7 +3334,7 @@
       "expected": "['SMS', 'El. paštas']",
       "result": "Gauta: ['SMS', 'El. paštas']. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.76
+      "duration_ms": 1.0
     },
     {
       "id": "TA-304",
@@ -3345,7 +3345,7 @@
       "expected": "['Perduotas tiekėjui', 'Perduotas tiekėjui']",
       "result": "Gauta: ['Perduotas tiekėjui', 'Perduotas tiekėjui']. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.03
+      "duration_ms": 0.51
     },
     {
       "id": "TA-305",
@@ -3356,7 +3356,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.34
+      "duration_ms": 1.5
     },
     {
       "id": "TA-306",
@@ -3367,7 +3367,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.8
+      "duration_ms": 0.49
     },
     {
       "id": "TA-307",
@@ -3378,7 +3378,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.53
+      "duration_ms": 1.84
     },
     {
       "id": "TA-308",
@@ -3389,7 +3389,7 @@
       "expected": "[(0,)]",
       "result": "Gauta: [(0,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.01
+      "duration_ms": 0.57
     },
     {
       "id": "TA-309",
@@ -3400,7 +3400,7 @@
       "expected": "[(7, 7, 'Pranešimų scenarijus')]",
       "result": "Gauta: [(7, 7, 'Pranešimų scenarijus')]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.75
+      "duration_ms": 0.44
     },
     {
       "id": "TA-310",
@@ -3411,7 +3411,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.74
+      "duration_ms": 0.59
     },
     {
       "id": "TA-311",
@@ -3433,7 +3433,7 @@
       "expected": "[('Pradinė sąmata',)]",
       "result": "Gauta: [('Pradinė sąmata',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.89
+      "duration_ms": 0.5
     },
     {
       "id": "TA-313",
@@ -3444,7 +3444,7 @@
       "expected": "[('Pateikta',)]",
       "result": "Gauta: [('Pateikta',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.91
+      "duration_ms": 0.43
     },
     {
       "id": "TA-314",
@@ -3455,7 +3455,7 @@
       "expected": "[(1, 'Siuntimo klaida', 'MOCK_UNAVAILABLE')]",
       "result": "Gauta: [(1, 'Siuntimo klaida', 'MOCK_UNAVAILABLE')]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.88
+      "duration_ms": 0.62
     },
     {
       "id": "TA-315",
@@ -3466,7 +3466,7 @@
       "expected": "[('Siuntimo klaida',)]",
       "result": "Gauta: [('Siuntimo klaida',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.77
+      "duration_ms": 0.45
     },
     {
       "id": "TA-316",
@@ -3477,7 +3477,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.12
+      "duration_ms": 1.38
     },
     {
       "id": "TA-317",
@@ -3488,7 +3488,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 20.69
+      "duration_ms": 3.1
     },
     {
       "id": "TA-318",
@@ -3499,7 +3499,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.9
+      "duration_ms": 3.16
     },
     {
       "id": "TA-319",
@@ -3510,7 +3510,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.76
+      "duration_ms": 1.08
     },
     {
       "id": "TA-320",
@@ -3521,7 +3521,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.45
+      "duration_ms": 3.27
     },
     {
       "id": "TA-321",
@@ -3532,7 +3532,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.27
+      "duration_ms": 2.91
     },
     {
       "id": "TA-322",
@@ -3543,7 +3543,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.45
+      "duration_ms": 4.86
     },
     {
       "id": "TA-323",
@@ -3554,7 +3554,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.95
+      "duration_ms": 1.28
     },
     {
       "id": "TA-324",
@@ -3565,7 +3565,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.24
+      "duration_ms": 9.01
     },
     {
       "id": "TA-325",
@@ -3576,7 +3576,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.73
+      "duration_ms": 3.51
     },
     {
       "id": "TA-326",
@@ -3587,7 +3587,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.24
+      "duration_ms": 3.29
     },
     {
       "id": "TA-327",
@@ -3598,7 +3598,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.97
+      "duration_ms": 2.8
     },
     {
       "id": "TA-328",
@@ -3609,7 +3609,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 14.41
+      "duration_ms": 9.8
     },
     {
       "id": "TA-329",
@@ -3620,7 +3620,7 @@
       "expected": "(2, 2)",
       "result": "Gauta: (2, 2). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.31
+      "duration_ms": 1.51
     },
     {
       "id": "TA-330",
@@ -3631,7 +3631,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.42
+      "duration_ms": 3.44
     },
     {
       "id": "TA-331",
@@ -3642,7 +3642,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 10.02
+      "duration_ms": 5.96
     },
     {
       "id": "TA-332",
@@ -3653,7 +3653,7 @@
       "expected": "['Siuntimo klaida', 'Siuntimo klaida', 'Perduotas tiekėjui']",
       "result": "Gauta: ['Siuntimo klaida', 'Siuntimo klaida', 'Perduotas tiekėjui']. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.03
+      "duration_ms": 0.55
     },
     {
       "id": "TA-333",
@@ -3664,7 +3664,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.68
+      "duration_ms": 3.7
     },
     {
       "id": "TA-334",
@@ -3675,7 +3675,7 @@
       "expected": "[('Pateikta',)]",
       "result": "Gauta: [('Pateikta',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.74
+      "duration_ms": 0.46
     },
     {
       "id": "TA-335",
@@ -3686,7 +3686,7 @@
       "expected": "(409, 2)",
       "result": "Gauta: (409, 2). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.64
+      "duration_ms": 2.01
     },
     {
       "id": "TA-336",
@@ -3697,7 +3697,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.77
+      "duration_ms": 0.58
     },
     {
       "id": "TA-337",
@@ -3708,7 +3708,7 @@
       "expected": "[(0,)]",
       "result": "Gauta: [(0,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.65
+      "duration_ms": 0.45
     },
     {
       "id": "TA-338",
@@ -3719,7 +3719,7 @@
       "expected": "[('Papildyta sąmata',)]",
       "result": "Gauta: [('Papildyta sąmata',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.71
+      "duration_ms": 0.66
     },
     {
       "id": "TA-339",
@@ -3730,7 +3730,7 @@
       "expected": "[(1, 'Siuntimo klaida', 'MOCK_TIMEOUT')]",
       "result": "Gauta: [(1, 'Siuntimo klaida', 'MOCK_TIMEOUT')]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.31
+      "duration_ms": 0.41
     },
     {
       "id": "TA-340",
@@ -3741,7 +3741,7 @@
       "expected": "[('Pateikta',)]",
       "result": "Gauta: [('Pateikta',)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.73
+      "duration_ms": 0.74
     },
     {
       "id": "TA-341",
@@ -3752,7 +3752,7 @@
       "expected": "[200, 409]",
       "result": "Gauta: [200, 409]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 16.46
+      "duration_ms": 15.33
     },
     {
       "id": "TA-342",
@@ -3763,7 +3763,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.68
+      "duration_ms": 0.61
     },
     {
       "id": "TA-343",
@@ -3774,7 +3774,7 @@
       "expected": "['Sukurtas', 'Sukurtas']",
       "result": "Gauta: ['Sukurtas', 'Sukurtas']. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.96
+      "duration_ms": 0.51
     },
     {
       "id": "TA-344",
@@ -3785,7 +3785,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.68
+      "duration_ms": 0.85
     },
     {
       "id": "TA-345",
@@ -3796,7 +3796,7 @@
       "expected": "['Perduotas tiekėjui', 'Perduotas tiekėjui']",
       "result": "Gauta: ['Perduotas tiekėjui', 'Perduotas tiekėjui']. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.68
+      "duration_ms": 0.51
     },
     {
       "id": "TA-346",
@@ -3807,7 +3807,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.66
+      "duration_ms": 0.4
     },
     {
       "id": "TA-347",
@@ -3818,7 +3818,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.87
+      "duration_ms": 0.52
     },
     {
       "id": "TA-348",
@@ -3829,7 +3829,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.92
+      "duration_ms": 0.46
     },
     {
       "id": "TA-349",
@@ -3840,7 +3840,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.03
+      "duration_ms": 0.57
     },
     {
       "id": "TA-350",
@@ -3851,7 +3851,7 @@
       "expected": "(200, 2)",
       "result": "Gauta: (200, 2). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.57
+      "duration_ms": 2.47
     },
     {
       "id": "TA-351",
@@ -3862,7 +3862,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.75
+      "duration_ms": 0.9
     },
     {
       "id": "TA-352",
@@ -3873,7 +3873,7 @@
       "expected": "(200, 2)",
       "result": "Gauta: (200, 2). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.51
+      "duration_ms": 2.54
     },
     {
       "id": "TA-353",
@@ -3884,7 +3884,7 @@
       "expected": "2",
       "result": "Gauta: 2. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.9
+      "duration_ms": 0.63
     },
     {
       "id": "TA-354",
@@ -3895,7 +3895,7 @@
       "expected": "(200, 2)",
       "result": "Gauta: (200, 2). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.08
+      "duration_ms": 4.37
     },
     {
       "id": "TA-355",
@@ -3906,7 +3906,7 @@
       "expected": "(409, 2)",
       "result": "Gauta: (409, 2). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 17.89
+      "duration_ms": 7.57
     },
     {
       "id": "TA-356",
@@ -3917,7 +3917,7 @@
       "expected": "(409, 2)",
       "result": "Gauta: (409, 2). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.99
+      "duration_ms": 4.31
     },
     {
       "id": "TA-357",
@@ -3928,7 +3928,7 @@
       "expected": "[(None, 'Paruoštas')]",
       "result": "Gauta: [(None, 'Paruoštas')]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.65
+      "duration_ms": 0.48
     },
     {
       "id": "TA-358",
@@ -3939,7 +3939,7 @@
       "expected": "{'orders': 1, 'closed_orders': 0, 'work_minutes': 0, 'confirmed_cents': 10000, 'paid_cents': 0}",
       "result": "Gauta: {'orders': 1, 'closed_orders': 0, 'work_minutes': 0, 'confirmed_cents': 10000, 'paid_cents': 0}. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.31
+      "duration_ms": 1.36
     },
     {
       "id": "TA-359",
@@ -3950,7 +3950,7 @@
       "expected": "{'orders': 0, 'closed_orders': 0, 'work_minutes': 17, 'confirmed_cents': 5000, 'paid_cents': 1000}",
       "result": "Gauta: {'orders': 0, 'closed_orders': 0, 'work_minutes': 17, 'confirmed_cents': 5000, 'paid_cents': 1000}. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.74
+      "duration_ms": 1.36
     },
     {
       "id": "TA-360",
@@ -3961,7 +3961,7 @@
       "expected": "{'orders': 0, 'closed_orders': 1, 'work_minutes': 23, 'confirmed_cents': 0, 'paid_cents': 14000}",
       "result": "Gauta: {'orders': 0, 'closed_orders': 1, 'work_minutes': 23, 'confirmed_cents': 0, 'paid_cents': 14000}. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.82
+      "duration_ms": 1.13
     },
     {
       "id": "TA-361",
@@ -3972,7 +3972,7 @@
       "expected": "[{'date': '2027-04-01', 'orders': 1, 'closed_orders': 0, 'work_minutes': 0, 'confirmed_cents': 10000, 'paid_cents': 0}, {'date': '2027-04-02', 'orders': 0, 'closed_orders': 0, 'work_minutes': 17, 'confirmed_cents': 5000, 'paid_cents': 1000}, {'date': '2027-04-03', 'orders': 0, 'closed_orders': 1, 'work_minutes': 23, 'confirmed_cents': 0, 'paid_cents': 14000}]",
       "result": "Gauta: [{'date': '2027-04-01', 'orders': 1, 'closed_orders': 0, 'work_minutes': 0, 'confirmed_cents': 10000, 'paid_cents': 0}, {'date': '2027-04-02', 'orders': 0, 'closed_orders': 0, 'work_minutes': 17, 'confirmed_cents': 5000, 'paid_cents': 1000}, {'date': '2027-04-03', 'orders': 0, 'closed_orders': 1, 'work_minutes': 23, 'confirmed_cents': 0, 'paid_cents': 14000}]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.1
+      "duration_ms": 7.48
     },
     {
       "id": "TA-362",
@@ -3983,7 +3983,7 @@
       "expected": "15000",
       "result": "Gauta: 15000. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.66
+      "duration_ms": 3.01
     },
     {
       "id": "TA-363",
@@ -3994,7 +3994,7 @@
       "expected": "{'orders': 0, 'closed_orders': 0, 'work_minutes': 0, 'confirmed_cents': 0, 'paid_cents': 0}",
       "result": "Gauta: {'orders': 0, 'closed_orders': 0, 'work_minutes': 0, 'confirmed_cents': 0, 'paid_cents': 0}. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.96
+      "duration_ms": 1.43
     },
     {
       "id": "TA-364",
@@ -4005,7 +4005,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.61
+      "duration_ms": 1.24
     },
     {
       "id": "TA-365",
@@ -4016,7 +4016,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.67
+      "duration_ms": 1.32
     },
     {
       "id": "TA-366",
@@ -4027,7 +4027,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.59
+      "duration_ms": 1.23
     },
     {
       "id": "TA-367",
@@ -4038,7 +4038,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.14
+      "duration_ms": 1.06
     },
     {
       "id": "TA-368",
@@ -4049,7 +4049,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.7
+      "duration_ms": 1.05
     },
     {
       "id": "TA-369",
@@ -4060,7 +4060,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.53
+      "duration_ms": 1.12
     },
     {
       "id": "TA-370",
@@ -4071,7 +4071,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.27
+      "duration_ms": 1.05
     },
     {
       "id": "TA-371",
@@ -4082,7 +4082,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.93
+      "duration_ms": 1.31
     },
     {
       "id": "TA-372",
@@ -4093,7 +4093,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.62
+      "duration_ms": 1.03
     },
     {
       "id": "TA-373",
@@ -4115,7 +4115,7 @@
       "expected": "1",
       "result": "Gauta: 1. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.27
+      "duration_ms": 1.14
     },
     {
       "id": "TA-375",
@@ -4126,7 +4126,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.67
+      "duration_ms": 2.4
     },
     {
       "id": "TA-376",
@@ -4137,7 +4137,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.05
+      "duration_ms": 0.71
     },
     {
       "id": "TA-377",
@@ -4148,7 +4148,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.99
+      "duration_ms": 0.47
     },
     {
       "id": "TA-378",
@@ -4159,7 +4159,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.06
+      "duration_ms": 0.56
     },
     {
       "id": "TA-379",
@@ -4170,7 +4170,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.57
+      "duration_ms": 0.54
     },
     {
       "id": "TA-380",
@@ -4181,7 +4181,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.42
+      "duration_ms": 0.43
     },
     {
       "id": "TA-381",
@@ -4192,7 +4192,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.02
+      "duration_ms": 0.38
     },
     {
       "id": "TA-382",
@@ -4203,7 +4203,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.21
+      "duration_ms": 0.56
     },
     {
       "id": "TA-383",
@@ -4214,7 +4214,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.57
+      "duration_ms": 3.08
     },
     {
       "id": "TA-384",
@@ -4225,7 +4225,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.66
+      "duration_ms": 3.4
     },
     {
       "id": "TA-385",
@@ -4236,7 +4236,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.75
+      "duration_ms": 3.16
     },
     {
       "id": "TA-386",
@@ -4247,7 +4247,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 8.64
+      "duration_ms": 3.15
     },
     {
       "id": "TA-387",
@@ -4258,7 +4258,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.64
+      "duration_ms": 3.1
     },
     {
       "id": "TA-388",
@@ -4269,7 +4269,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.74
+      "duration_ms": 7.37
     },
     {
       "id": "TA-389",
@@ -4280,7 +4280,7 @@
       "expected": "403",
       "result": "Gauta: 403. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.28
+      "duration_ms": 1.28
     },
     {
       "id": "TA-390",
@@ -4291,7 +4291,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.75
+      "duration_ms": 0.58
     },
     {
       "id": "TA-391",
@@ -4302,7 +4302,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.72
+      "duration_ms": 3.78
     },
     {
       "id": "TA-392",
@@ -4313,7 +4313,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.61
+      "duration_ms": 3.18
     },
     {
       "id": "TA-393",
@@ -4324,7 +4324,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 5.18
+      "duration_ms": 2.91
     },
     {
       "id": "TA-394",
@@ -4335,7 +4335,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.56
+      "duration_ms": 1.01
     },
     {
       "id": "TA-395",
@@ -4346,7 +4346,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.55
+      "duration_ms": 1.02
     },
     {
       "id": "TA-396",
@@ -4368,7 +4368,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 132.16
+      "duration_ms": 72.57
     },
     {
       "id": "TA-398",
@@ -4379,7 +4379,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 67.22
+      "duration_ms": 36.81
     },
     {
       "id": "TA-399",
@@ -4390,7 +4390,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 70.87
+      "duration_ms": 40.72
     },
     {
       "id": "TA-400",
@@ -4401,7 +4401,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 30.38
+      "duration_ms": 16.54
     },
     {
       "id": "TA-401",
@@ -4423,7 +4423,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.16
+      "duration_ms": 0.84
     },
     {
       "id": "TA-403",
@@ -4434,7 +4434,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 68.22
+      "duration_ms": 37.33
     },
     {
       "id": "TA-404",
@@ -4445,7 +4445,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.34
+      "duration_ms": 1.67
     },
     {
       "id": "TA-405",
@@ -4467,7 +4467,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.04
+      "duration_ms": 0.81
     },
     {
       "id": "TA-407",
@@ -4478,7 +4478,7 @@
       "expected": "401",
       "result": "Gauta: 401. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.83
+      "duration_ms": 0.9
     },
     {
       "id": "TA-408",
@@ -4522,7 +4522,7 @@
       "expected": "False",
       "result": "Gauta: False. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.62
+      "duration_ms": 4.64
     },
     {
       "id": "TA-412",
@@ -4530,10 +4530,10 @@
       "requirement": "NF-05",
       "description": "DB realizuoja visas 15 loginių esybių",
       "steps": "DB realizuoja visas 15 loginių esybių",
-      "expected": "{'estimate_lines', 'notifications', 'orders', 'clients', 'payments', 'cars', 'audit', 'tasks', 'users', 'appointments', 'estimates', 'diagnostic_entries', 'notification_attempts', 'estimate_decisions', 'diagnostic_assignments'}",
-      "result": "Gauta: {'orders', 'estimate_lines', 'payments', 'clients', 'audit', 'cars', 'notifications', 'tasks', 'users', 'appointments', 'estimates', 'diagnostic_entries', 'notification_attempts', 'estimate_decisions', 'diagnostic_assignments'}. Atitiko tikėtiną rezultatą.",
+      "expected": "{'diagnostic_assignments', 'clients', 'cars', 'orders', 'diagnostic_entries', 'payments', 'estimate_lines', 'notification_attempts', 'tasks', 'estimate_decisions', 'estimates', 'users', 'appointments', 'audit', 'notifications'}",
+      "result": "Gauta: {'diagnostic_assignments', 'clients', 'cars', 'orders', 'diagnostic_entries', 'payments', 'estimate_lines', 'notification_attempts', 'tasks', 'estimate_decisions', 'estimates', 'users', 'appointments', 'audit', 'notifications'}. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.71
+      "duration_ms": 0.52
     },
     {
       "id": "TA-413",
@@ -4544,7 +4544,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.74
+      "duration_ms": 0.51
     },
     {
       "id": "TA-414",
@@ -4555,7 +4555,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.27
+      "duration_ms": 1.41
     },
     {
       "id": "TA-415",
@@ -4566,7 +4566,7 @@
       "expected": "(200, [(8,)])",
       "result": "Gauta: (200, [(8,)]). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.25
+      "duration_ms": 3.85
     },
     {
       "id": "TA-416",
@@ -4577,7 +4577,7 @@
       "expected": "400",
       "result": "Gauta: 400. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.21
+      "duration_ms": 1.18
     },
     {
       "id": "TA-417",
@@ -4588,7 +4588,7 @@
       "expected": "1",
       "result": "Gauta: 1. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.27
+      "duration_ms": 0.47
     },
     {
       "id": "TA-418",
@@ -4599,7 +4599,7 @@
       "expected": "409",
       "result": "Gauta: 409. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.5
+      "duration_ms": 1.5
     },
     {
       "id": "TA-419",
@@ -4610,7 +4610,7 @@
       "expected": "Laukas „diagnostikos rezultatas“ privalomas (iki 2000 simbolių).",
       "result": "Gauta: Laukas „diagnostikos rezultatas“ privalomas (iki 2000 simbolių).. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.09
+      "duration_ms": 6.24
     },
     {
       "id": "TA-420",
@@ -4621,7 +4621,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 10.74
+      "duration_ms": 8.21
     },
     {
       "id": "TA-421",
@@ -4632,7 +4632,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.32
+      "duration_ms": 1.61
     },
     {
       "id": "TA-422",
@@ -4643,7 +4643,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.81
+      "duration_ms": 2.02
     },
     {
       "id": "TA-423",
@@ -4654,7 +4654,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.15
+      "duration_ms": 2.33
     },
     {
       "id": "TA-424",
@@ -4665,7 +4665,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.65
+      "duration_ms": 1.3
     },
     {
       "id": "TA-425",
@@ -4676,7 +4676,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.04
+      "duration_ms": 1.56
     },
     {
       "id": "TA-426",
@@ -4687,7 +4687,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 3.93
+      "duration_ms": 2.19
     },
     {
       "id": "TA-427",
@@ -4698,7 +4698,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.68
+      "duration_ms": 1.27
     },
     {
       "id": "TA-428",
@@ -4709,7 +4709,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.58
+      "duration_ms": 1.09
     },
     {
       "id": "TA-429",
@@ -4720,7 +4720,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.18
+      "duration_ms": 1.05
     },
     {
       "id": "TA-430",
@@ -4731,7 +4731,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.28
+      "duration_ms": 1.43
     },
     {
       "id": "TA-431",
@@ -4742,7 +4742,7 @@
       "expected": "[(8, 8, 'Privati pirmojo kliento problema')]",
       "result": "Gauta: [(8, 8, 'Privati pirmojo kliento problema')]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.25
+      "duration_ms": 0.62
     },
     {
       "id": "TA-432",
@@ -4753,7 +4753,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.11
+      "duration_ms": 0.55
     },
     {
       "id": "TA-433",
@@ -4764,7 +4764,7 @@
       "expected": "[3]",
       "result": "Gauta: [3]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.17
+      "duration_ms": 1.68
     },
     {
       "id": "TA-434",
@@ -4775,7 +4775,7 @@
       "expected": "[(9,)]",
       "result": "Gauta: [(9,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.89
+      "duration_ms": 0.57
     },
     {
       "id": "TA-435",
@@ -4786,7 +4786,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.2
+      "duration_ms": 1.52
     },
     {
       "id": "TA-436",
@@ -4797,7 +4797,7 @@
       "expected": "[(9,)]",
       "result": "Gauta: [(9,)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.3
+      "duration_ms": 0.54
     },
     {
       "id": "TA-437",
@@ -4808,7 +4808,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.26
+      "duration_ms": 4.54
     },
     {
       "id": "TA-438",
@@ -4819,7 +4819,7 @@
       "expected": "404",
       "result": "Gauta: 404. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.77
+      "duration_ms": 1.11
     },
     {
       "id": "TA-439",
@@ -4830,7 +4830,7 @@
       "expected": "200",
       "result": "Gauta: 200. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 2.08
+      "duration_ms": 5.46
     },
     {
       "id": "TA-440",
@@ -4841,7 +4841,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.78
+      "duration_ms": 0.73
     },
     {
       "id": "TA-441",
@@ -4852,7 +4852,7 @@
       "expected": "[]",
       "result": "Gauta: []. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.83
+      "duration_ms": 0.86
     },
     {
       "id": "TA-442",
@@ -4863,7 +4863,7 @@
       "expected": "((7, 'saugoma-maisa', None), (13, 'Patvirtintas'), (15, 13), 17, [])",
       "result": "Gauta: ((7, 'saugoma-maisa', None), (13, 'Patvirtintas'), (15, 13), 17, []). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 107.5
+      "duration_ms": 74.03
     },
     {
       "id": "TA-443",
@@ -4874,7 +4874,7 @@
       "expected": "((7, 'saugoma-maisa', None), (13, 'Patvirtintas'), (15, 13), 17, [])",
       "result": "Gauta: ((7, 'saugoma-maisa', None), (13, 'Patvirtintas'), (15, 13), 17, []). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.02
+      "duration_ms": 4.12
     },
     {
       "id": "TA-444",
@@ -4885,7 +4885,7 @@
       "expected": "((17, 15, 'Rengiama', 10000, 7), (19, 1000, 10000), [])",
       "result": "Gauta: ((17, 15, 'Rengiama', 10000, 7), (19, 1000, 10000), []). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 170.22
+      "duration_ms": 79.82
     },
     {
       "id": "TA-445",
@@ -4896,7 +4896,7 @@
       "expected": "((17, 15, 'Rengiama', 10000, 7), (19, 1000, 10000), [])",
       "result": "Gauta: ((17, 15, 'Rengiama', 10000, 7), (19, 1000, 10000), []). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 6.63
+      "duration_ms": 5.71
     },
     {
       "id": "TA-446",
@@ -4907,7 +4907,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 4.86
+      "duration_ms": 2.79
     },
     {
       "id": "TA-447",
@@ -4918,7 +4918,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 90.24
+      "duration_ms": 55.73
     },
     {
       "id": "TA-448",
@@ -4929,7 +4929,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 7.54
+      "duration_ms": 3.47
     },
     {
       "id": "TA-449",
@@ -4940,7 +4940,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.04
+      "duration_ms": 0.02
     },
     {
       "id": "TA-450",
@@ -4951,7 +4951,7 @@
       "expected": "(0, (None, None), [])",
       "result": "Gauta: (0, (None, None), []). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.83
+      "duration_ms": 0.43
     },
     {
       "id": "TA-451",
@@ -4959,10 +4959,10 @@
       "requirement": "NF-05",
       "description": "Migracija išlaiko slaptažodį ir užfiksuoja užsakymo kontekstą",
       "steps": "Migracija išlaiko slaptažodį ir užfiksuoja užsakymo kontekstą",
-      "expected": "((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$62d0ccc8631194a16b8295ddf74d836e$c013d68c318dbee5dc4206a3919d92b978c3dc05be73cbe7a58ba7aa0bc920ba', True, [])",
-      "result": "Gauta: ((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$62d0ccc8631194a16b8295ddf74d836e$c013d68c318dbee5dc4206a3919d92b978c3dc05be73cbe7a58ba7aa0bc920ba', True, []). Atitiko tikėtiną rezultatą.",
+      "expected": "((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$a22d5fd5564fe0e3a7608101bc62dd99$49a648607b1ce789b6d8aae3d793b4b3ce1361f9aa98463893f6c4dd345ba55c', True, [])",
+      "result": "Gauta: ((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$a22d5fd5564fe0e3a7608101bc62dd99$49a648607b1ce789b6d8aae3d793b4b3ce1361f9aa98463893f6c4dd345ba55c', True, []). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 61.5
+      "duration_ms": 35.67
     },
     {
       "id": "TA-452",
@@ -4970,10 +4970,10 @@
       "requirement": "NF-05",
       "description": "4 etapo migracija saugiai kartojama",
       "steps": "4 etapo migracija saugiai kartojama",
-      "expected": "((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$62d0ccc8631194a16b8295ddf74d836e$c013d68c318dbee5dc4206a3919d92b978c3dc05be73cbe7a58ba7aa0bc920ba', True, [])",
-      "result": "Gauta: ((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$62d0ccc8631194a16b8295ddf74d836e$c013d68c318dbee5dc4206a3919d92b978c3dc05be73cbe7a58ba7aa0bc920ba', True, []). Atitiko tikėtiną rezultatą.",
+      "expected": "((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$a22d5fd5564fe0e3a7608101bc62dd99$49a648607b1ce789b6d8aae3d793b4b3ce1361f9aa98463893f6c4dd345ba55c', True, [])",
+      "result": "Gauta: ((1, 1, 1, 'Išsaugota problema', 123), 'pbkdf2_sha256$260000$a22d5fd5564fe0e3a7608101bc62dd99$49a648607b1ce789b6d8aae3d793b4b3ce1361f9aa98463893f6c4dd345ba55c', True, []). Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 68.56
+      "duration_ms": 35.75
     },
     {
       "id": "TA-453",
@@ -4995,7 +4995,7 @@
       "expected": "0",
       "result": "Gauta: 0. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.71
+      "duration_ms": 0.44
     },
     {
       "id": "TA-455",
@@ -5006,7 +5006,7 @@
       "expected": "[(1, 1), (2, 2)]",
       "result": "Gauta: [(1, 1), (2, 2)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 1.01
+      "duration_ms": 0.66
     },
     {
       "id": "TA-456",
@@ -5017,7 +5017,7 @@
       "expected": "[(1, 1), (2, 2)]",
       "result": "Gauta: [(1, 1), (2, 2)]. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.97
+      "duration_ms": 0.48
     },
     {
       "id": "TA-457",
@@ -5028,7 +5028,7 @@
       "expected": "True",
       "result": "Gauta: True. Atitiko tikėtiną rezultatą.",
       "passed": true,
-      "duration_ms": 0.03
+      "duration_ms": 0.02
     }
   ],
   "passed": 457,

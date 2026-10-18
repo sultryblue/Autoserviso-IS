@@ -46,6 +46,9 @@ def check(number,scenario,req,description,steps,fn,expected):
 def run():
     RESULTS.clear()
     old=main.DB
+    old_clock=main.appointment_now
+    # Existing fixtures use fixed dates; keep their business clock deterministic.
+    main.appointment_now=lambda:datetime(2026,1,1,tzinfo=main.VISIT_TIMEZONE)
     with tempfile.TemporaryDirectory() as tmp:
         main.DB=Path(tmp)/'test.db';main.init_db(seed=False)
         server=main.ThreadingHTTPServer(('127.0.0.1',0),main.Handler)
@@ -114,6 +117,7 @@ def run():
         stage4_migration(Path(tmp))
         stage5a_migration(Path(tmp))
         main.DB=old
+        main.appointment_now=old_clock
     report={'executed_at':datetime.now().isoformat(timespec='seconds'),'environment':'Python '+__import__('sys').version.split()[0],
             'type':'HTTP ir duomenų vientisumo testai vietinėje laikinoje SQLite bazėje','tests':RESULTS,
             'passed':sum(t['passed'] for t in RESULTS),'total':len(RESULTS)}

@@ -23,6 +23,8 @@ class RegressionTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.old_db = main.DB
+        self.old_clock = main.appointment_now
+        main.appointment_now=lambda:datetime(2028,1,1,tzinfo=main.VISIT_TIMEZONE)
         main.DB = Path(self.tmp.name) / 'regression.db'
         main.SESSIONS.clear()
         notification_provider.configure('success')
@@ -47,6 +49,7 @@ class RegressionTests(unittest.TestCase):
     def tearDown(self):
         self.server.shutdown(); self.server.server_close(); self.thread.join(timeout=2)
         main.DB = self.old_db
+        main.appointment_now = self.old_clock
         main.SESSIONS.clear()
         self.tmp.cleanup()
 

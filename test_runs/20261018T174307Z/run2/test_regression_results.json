@@ -1,0 +1,125 @@
+{
+  "executed_at": "2026-10-18T17:43:40.274163+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "sqlite": "3.53.1"
+  },
+  "type": "Papildomi HTTP/DB regresiniai testavimo atvejai; laikina DB",
+  "total": 14,
+  "passed": 14,
+  "tests": [
+    {
+      "id": "RG-01",
+      "requirement": "FR-09",
+      "description": "To paties kliento automobilis pakeičiamas, pranešimų istorija išlieka.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 564.32
+    },
+    {
+      "id": "RG-02",
+      "requirement": "FR-09; NF-16",
+      "description": "Darbuotojo HTTP bandymas perkelti vizitą kitam klientui atmetamas.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 599.85
+    },
+    {
+      "id": "RG-03",
+      "requirement": "FR-09; NF-11",
+      "description": "Klientas keičia savo automobilį, svetimo negali pasirinkti.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 529.47
+    },
+    {
+      "id": "RG-04",
+      "requirement": "NF-05; NF-16",
+      "description": "Tiesioginis vizito client_id pakeitimas arba NULL DB atmetamas.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 511.11
+    },
+    {
+      "id": "RG-05",
+      "requirement": "NF-05; NF-16",
+      "description": "Apsauga įdiegiama esamai DB; pakartotinis paleidimas nekeičia įrašų.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 503.53
+    },
+    {
+      "id": "RG-06",
+      "requirement": "FR-07; FR-09",
+      "description": "Keičiant vizitą laisvo laiko užklausa negali naudoti kito kliento automobilio.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 524.04
+    },
+    {
+      "id": "RG-07",
+      "requirement": "FR-14; FR-15",
+      "description": "Pirmas juodraštis palieka Naujas, pateikimas nustato Derinamas.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 531.95
+    },
+    {
+      "id": "RG-08",
+      "requirement": "FR-14; FR-16",
+      "description": "Po atmetimo naujo juodraščio sukūrimas ir redagavimas palieka Derinamas.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 549.62
+    },
+    {
+      "id": "RG-09",
+      "requirement": "FR-14; FR-16",
+      "description": "Pakartotinai atmetus pasiūlymą išlieka Derinamas ir galima paruošti grąžinimui.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 561.83
+    },
+    {
+      "id": "RG-10",
+      "requirement": "FR-14",
+      "description": "Tuščia versija ir detalė be ankstesnės patvirtintos apimties atmetamos be dalinių pakeitimų.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 555.98
+    },
+    {
+      "id": "RG-11",
+      "requirement": "FR-17; FR-19; FR-21",
+      "description": "Papildymas nedubliuoja užduočių ir nekeičia vykdomo užsakymo būsenos.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 572.15
+    },
+    {
+      "id": "RG-12",
+      "requirement": "FR-13",
+      "description": "Faktinis perdavimas nepakeičia privalomos netuščios užbaigimo pastabos.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 609.52
+    },
+    {
+      "id": "RG-13",
+      "requirement": "FR-01; NF-10",
+      "description": "Atskirai patikrinti visų keturių rolių prisijungimo ir sesijos rezultatai.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 728.53
+    },
+    {
+      "id": "RG-14",
+      "requirement": "FR-25; FR-28",
+      "description": "Internetu registruojamas klientas, Vietoje – mokėjimą įrašęs darbuotojas.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 539.49
+    }
+  ]
+}

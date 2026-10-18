@@ -1,0 +1,7 @@
+{
+  "reported_on": "2026-10-18",
+  "status": "not_run",
+  "type": "Optional Chromium layout check for final code",
+  "reason": "Chromium installation failed: downloaded browser archive was invalid (End of central directory record signature not found). Python Playwright was not installed in this environment.",
+  "previous_results": "test_runs/20261016T082900Z: 24/24 per run for the previous source hashes; not current-code results."
+}

@@ -31,6 +31,8 @@ ROOT=Path(__file__).resolve().parent
 def fixtures():
     """Capture genuine local-server responses in a temporary database."""
     old=main.DB
+    old_clock=main.appointment_now
+    main.appointment_now=lambda:datetime(2028,1,1,tzinfo=main.VISIT_TIMEZONE)
     with tempfile.TemporaryDirectory() as tmp:
         main.DB=Path(tmp)/'browser_fixtures.db'
         main.SESSIONS.clear();notification_provider.configure('success');notification_provider._ACCEPTED.clear()
@@ -66,7 +68,7 @@ def fixtures():
                 result[role]=data
             return result
         finally:
-            server.shutdown();server.server_close();thread.join(timeout=2);main.DB=old;main.SESSIONS.clear()
+            server.shutdown();server.server_close();thread.join(timeout=2);main.DB=old;main.appointment_now=old_clock;main.SESSIONS.clear()
 
 
 class Tester:

@@ -1,0 +1,145 @@
+{
+  "executed_at": "2026-10-18T17:43:32.287Z",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "architecture": "x64"
+  },
+  "type": "JS logikos patikra VM su DOM ir HTTP imitacijomis; ne reali naršyklė",
+  "total": 33,
+  "passed": 33,
+  "tests": [
+    {
+      "name": "Naujas užsakymas nesiūlo paruošimo",
+      "passed": true
+    },
+    {
+      "name": "Be diagnostikos nesiūloma rengti sąmatos",
+      "passed": true
+    },
+    {
+      "name": "Po diagnostikos galima rengti sąmatą",
+      "passed": true
+    },
+    {
+      "name": "Visi patvirtinti darbai baigti – siūlomas paruošimas",
+      "passed": true
+    },
+    {
+      "name": "Vykdomas darbas neleidžia siūlyti paruošimo",
+      "passed": true
+    },
+    {
+      "name": "Trūkstama patvirtintos eilutės užduotis neleidžia paruošti",
+      "passed": true
+    },
+    {
+      "name": "Neišspręstas papildymas neleidžia siūlyti paruošimo",
+      "passed": true
+    },
+    {
+      "name": "Atmestas papildymas išlaiko baigtos v1 apimties paruošimą",
+      "passed": true
+    },
+    {
+      "name": "Visas remontas atmestas – automobilį galima grąžinti",
+      "passed": true
+    },
+    {
+      "name": "Uždarytas užsakymas neturi keitimo veiksmų",
+      "passed": true
+    },
+    {
+      "name": "Po perdavimo siūlomas tik galutinis uždarymas",
+      "passed": true
+    },
+    {
+      "name": "Kliento tuščia užsakymo kortelė be darbuotojo veiksmų",
+      "passed": true
+    },
+    {
+      "name": "Kliento navigacija ir aktyvi užsakymų skiltis",
+      "passed": true
+    },
+    {
+      "name": "vadybininkas navigacija atitinka rolę",
+      "passed": true
+    },
+    {
+      "name": "mechanikas navigacija atitinka rolę",
+      "passed": true
+    },
+    {
+      "name": "vadovas navigacija atitinka rolę",
+      "passed": true
+    },
+    {
+      "name": "Suma pateikiama eurais, ne centais",
+      "passed": true
+    },
+    {
+      "name": "Kiekis nerodomas tūkstantosiomis dalimis",
+      "passed": true
+    },
+    {
+      "name": "Užsakymų sąrašo filtras: ID, U-0001, automobilis, klientas ir neradimas",
+      "passed": true
+    },
+    {
+      "name": "Klientų paieška randa pagal vardą",
+      "passed": true
+    },
+    {
+      "name": "Klientų paieška randa pagal telefoną",
+      "passed": true
+    },
+    {
+      "name": "Naudotojo tekstas saugiai užkoduojamas HTML",
+      "passed": true
+    },
+    {
+      "name": "Lentelę galima fokusuoti klaviatūra",
+      "passed": true
+    },
+    {
+      "name": "Dialogas turi pavadinimą ir tekstinių klaidų sritį",
+      "passed": true
+    },
+    {
+      "name": "Tuščio sąrašo pranešimas atskirtas nuo paieškos neradimo",
+      "passed": true
+    },
+    {
+      "name": "Vizito keitimo forma siūlo tik to paties kliento automobilius",
+      "passed": true
+    },
+    {
+      "name": "Naujo vizito forma leidžia rinktis visų aktyvių klientų automobilius",
+      "passed": true
+    },
+    {
+      "name": "Pranešimo perdavimo būsena vienoda ir aiškiai pažymėta kaip imitacija",
+      "passed": true
+    },
+    {
+      "name": "Senas suvestinės atsakymas neperrašo naujesnio filtro",
+      "passed": true
+    },
+    {
+      "name": "Sena suvestinės klaida neperrašo naujesnio rezultato",
+      "passed": true
+    },
+    {
+      "name": "Senas audito atsakymas neperrašo naujesnio filtro",
+      "passed": true
+    },
+    {
+      "name": "Išėjus iš audito neliečiama naujos skilties sąsaja",
+      "passed": true
+    },
+    {
+      "name": "Nesėkmingas duomenų atnaujinimas nerodo TypeError",
+      "passed": true
+    }
+  ]
+}

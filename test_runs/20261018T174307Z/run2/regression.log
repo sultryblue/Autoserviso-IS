@@ -1,0 +1,33 @@
+test_01_same_client_vehicle (__main__.RegressionTests.test_01_same_client_vehicle)
+RG-01 | FR-09 | To paties kliento automobilis pakeičiamas, pranešimų istorija išlieka. ... ok
+test_02_other_client_vehicle (__main__.RegressionTests.test_02_other_client_vehicle)
+RG-02 | FR-09; NF-16 | Darbuotojo HTTP bandymas perkelti vizitą kitam klientui atmetamas. ... ok
+test_03_client_scope (__main__.RegressionTests.test_03_client_scope)
+RG-03 | FR-09; NF-11 | Klientas keičia savo automobilį, svetimo negali pasirinkti. ... ok
+test_04_database_identity (__main__.RegressionTests.test_04_database_identity)
+RG-04 | NF-05; NF-16 | Tiesioginis vizito client_id pakeitimas arba NULL DB atmetamas. ... ok
+test_05_existing_database_startup (__main__.RegressionTests.test_05_existing_database_startup)
+RG-05 | NF-05; NF-16 | Apsauga įdiegiama esamai DB; pakartotinis paleidimas nekeičia įrašų. ... ok
+test_06_free_slots_identity (__main__.RegressionTests.test_06_free_slots_identity)
+RG-06 | FR-07; FR-09 | Keičiant vizitą laisvo laiko užklausa negali naudoti kito kliento automobilio. ... ok
+test_07_first_draft (__main__.RegressionTests.test_07_first_draft)
+RG-07 | FR-14; FR-15 | Pirmas juodraštis palieka Naujas, pateikimas nustato Derinamas. ... ok
+test_08_rejected_new_draft (__main__.RegressionTests.test_08_rejected_new_draft)
+RG-08 | FR-14; FR-16 | Po atmetimo naujo juodraščio sukūrimas ir redagavimas palieka Derinamas. ... ok
+test_09_repeated_rejection (__main__.RegressionTests.test_09_repeated_rejection)
+RG-09 | FR-14; FR-16 | Pakartotinai atmetus pasiūlymą išlieka Derinamas ir galima paruošti grąžinimui. ... ok
+test_10_estimate_input (__main__.RegressionTests.test_10_estimate_input)
+RG-10 | FR-14 | Tuščia versija ir detalė be ankstesnės patvirtintos apimties atmetamos be dalinių pakeitimų. ... ok
+test_11_approved_and_running (__main__.RegressionTests.test_11_approved_and_running)
+RG-11 | FR-17; FR-19; FR-21 | Papildymas nedubliuoja užduočių ir nekeičia vykdomo užsakymo būsenos. ... ok
+test_12_closing_note (__main__.RegressionTests.test_12_closing_note)
+RG-12 | FR-13 | Faktinis perdavimas nepakeičia privalomos netuščios užbaigimo pastabos. ... ok
+test_13_login_roles (__main__.RegressionTests.test_13_login_roles)
+RG-13 | FR-01; NF-10 | Atskirai patikrinti visų keturių rolių prisijungimo ir sesijos rezultatai. ... ok
+test_14_recorded_by (__main__.RegressionTests.test_14_recorded_by)
+RG-14 | FR-25; FR-28 | Internetu registruojamas klientas, Vietoje – mokėjimą įrašęs darbuotojas. ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 7.882s
+
+OK

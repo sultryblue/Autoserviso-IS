@@ -16,8 +16,23 @@ from http.cookies import SimpleCookie
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 ROOT = Path(__file__).resolve().parent
+def load_visit_timezone():
+    try:
+        return ZoneInfo('Europe/Vilnius')
+    except ZoneInfoNotFoundError:
+        # Windows may not have an IANA database; keep the same rules offline.
+        with (ROOT / 'timezone_data' / 'Europe_Vilnius').open('rb') as source:
+            return ZoneInfo.from_file(source, key='Europe/Vilnius')
+
+VISIT_TIMEZONE = load_visit_timezone()
+
+def appointment_now():
+    """The service clock; appointments are stored as Lithuania local wall time."""
+    return datetime.now(VISIT_TIMEZONE)
+
 DB = ROOT / 'servisas.db'
 SESSIONS = {}
 SESSION_LOCK = threading.Lock()
@@ -168,12 +183,13 @@ def free_slots(c, user, d):
         raise RuleError('Neteisinga data.')
     duration = integer(d.get('minutes',60),1,600)
     result=[]
+    current = appointment_now()
     start=day.replace(hour=8)
     while start+timedelta(minutes=duration)<=day.replace(hour=18):
         end=start+timedelta(minutes=duration)
         a,b=start.isoformat(timespec='minutes'),end.isoformat(timespec='minutes')
         for bay in (1,2):
-            if not slot_conflict(c,car['id'],bay,a,b,exclude):
+            if start.replace(tzinfo=VISIT_TIMEZONE)>=current and not slot_conflict(c,car['id'],bay,a,b,exclude):
                 result.append({'start_at':a,'end_at':b,'bay':bay})
         start+=timedelta(minutes=30)
     return {'slots':result}
@@ -857,6 +873,9 @@ def mutate(c, user, action, d):
             raise RuleError('Galima keisti tik Patvirtintą vizitą.',409)
         if visit and car['client_id'] != visit['client_id']:
             raise RuleError('Vizito automobilį galima keisti tik to paties kliento ribose. Kitam klientui registruokite naują vizitą.',409)
+        time_changed = not visit or (start,end)!=(visit['start_at'],visit['end_at'])
+        if time_changed and a.replace(tzinfo=VISIT_TIMEZONE)<appointment_now():
+            raise RuleError('Vizito pradžios laikas jau praėjęs. Pasirinkite būsimą laiką Lietuvos laiku.')
         conflict=slot_conflict(c,car['id'],bay,start,end,key or 0)
         if conflict: raise RuleError('Šiuo laiku darbo vieta arba automobilis jau užregistruotas.',409)
         client_id=visit['client_id'] if visit else car['client_id']
@@ -871,6 +890,8 @@ def mutate(c, user, action, d):
         role(user,'klientas','vadybininkas','vadovas'); item=one(c,'appointments',key); status=required(d,'status')
         if item['status']!='Patvirtintas' or status not in ('Atšauktas','Neatvyko','Atvyko'):
             raise RuleError('Toks vizito būsenos pakeitimas negalimas.',409)
+        if status=='Neatvyko' and appointment_now()<datetime.fromisoformat(item['start_at']).replace(tzinfo=VISIT_TIMEZONE):
+            raise RuleError('Pažymėti „Neatvyko“ galima tik atėjus numatytai vizito pradžiai Lietuvos laiku.',409)
         c.execute('UPDATE appointments SET status=? WHERE id=?',(status,key))
         if status=='Atvyko':
             oid=c.execute('''INSERT INTO orders(appointment_id,car_id,client_id,problem,mileage,created_at)

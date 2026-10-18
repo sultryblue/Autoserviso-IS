@@ -1,0 +1,93 @@
+{
+  "executed_at": "2026-10-18T17:43:26.829263+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "sqlite": "3.53.1"
+  },
+  "type": "Vizitų laiko HTTP/DB regresiniai atvejai; laikina DB; valdomas dalykinis laikrodis",
+  "total": 10,
+  "passed": 10,
+  "tests": [
+    {
+      "id": "LT-01",
+      "requirement": "FR-08; VT-01",
+      "description": "Praeities registracija atmetama klientui ir abiem darbuotojų rolėms be DB pakeitimų.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 523.22
+    },
+    {
+      "id": "LT-02",
+      "requirement": "FR-08",
+      "description": "Tiksliai dabartinė pradžia ir būsimas laikas leidžiami; mikrosekunde praėjęs laikas atmetamas.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 531.52
+    },
+    {
+      "id": "LT-03",
+      "requirement": "FR-09",
+      "description": "Neatvykimas prieš pradžią atmetamas; tiksliai pradžioje ir po jos leidžiamas.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 558.36
+    },
+    {
+      "id": "LT-04",
+      "requirement": "FR-09; FR-10; NF-10",
+      "description": "Atšaukimas ir priėmimas išlieka veikiantys, klientas neatvykimo nežymi.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 540.07
+    },
+    {
+      "id": "LT-05",
+      "requirement": "FR-07",
+      "description": "Laisvų laikų sąrašas nebesiūlo praėjusių pradžių, dabartinės minutės riba tiksli.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 537.41
+    },
+    {
+      "id": "LT-06",
+      "requirement": "FR-07; FR-08; FR-09",
+      "description": "UTC palyginimas atitinka Lietuvos žiemos, vasaros ir laiko keitimo dienų laiką.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 627.37
+    },
+    {
+      "id": "LT-07",
+      "requirement": "FR-08",
+      "description": "Vizito laukai priima Lietuvos vietinį laiką minučių tikslumu, o UTC ir poslinkio įvestį atmeta.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 511.23
+    },
+    {
+      "id": "LT-08",
+      "requirement": "FR-08; VT-01",
+      "description": "Laiko kontrolė išlaiko automobilio ir darbo vietos konfliktus bei leidžia gretimus laikus.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 536.23
+    },
+    {
+      "id": "LT-09",
+      "requirement": "FR-08; FR-09; NF-16",
+      "description": "Perkėlimas į praeitį atmetamas, į ateitį leidžiamas, paleidimas istorijos neperrašo.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 572.52
+    },
+    {
+      "id": "LT-10",
+      "requirement": "FR-08; NF-08",
+      "description": "Be sistemos IANA bazės naudojami paketo duomenys, serverio laikrodis išlieka su Lietuvos zona.",
+      "passed": true,
+      "error": "",
+      "duration_ms": 533.72
+    }
+  ]
+}

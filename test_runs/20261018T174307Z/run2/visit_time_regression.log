@@ -1,0 +1,25 @@
+test_01_past_registration (__main__.VisitTimeTests.test_01_past_registration)
+LT-01 | FR-08; VT-01 | Praeities registracija atmetama klientui ir abiem darbuotojų rolėms be DB pakeitimų. ... ok
+test_02_exact_start_and_future (__main__.VisitTimeTests.test_02_exact_start_and_future)
+LT-02 | FR-08 | Tiksliai dabartinė pradžia ir būsimas laikas leidžiami; mikrosekunde praėjęs laikas atmetamas. ... ok
+test_03_absence_boundary (__main__.VisitTimeTests.test_03_absence_boundary)
+LT-03 | FR-09 | Neatvykimas prieš pradžią atmetamas; tiksliai pradžioje ir po jos leidžiamas. ... ok
+test_04_other_statuses_and_roles (__main__.VisitTimeTests.test_04_other_statuses_and_roles)
+LT-04 | FR-09; FR-10; NF-10 | Atšaukimas ir priėmimas išlieka veikiantys, klientas neatvykimo nežymi. ... ok
+test_05_free_slots (__main__.VisitTimeTests.test_05_free_slots)
+LT-05 | FR-07 | Laisvų laikų sąrašas nebesiūlo praėjusių pradžių, dabartinės minutės riba tiksli. ... ok
+test_06_lithuanian_timezone (__main__.VisitTimeTests.test_06_lithuanian_timezone)
+LT-06 | FR-07; FR-08; FR-09 | UTC palyginimas atitinka Lietuvos žiemos, vasaros ir laiko keitimo dienų laiką. ... ok
+test_07_input_time_contract (__main__.VisitTimeTests.test_07_input_time_contract)
+LT-07 | FR-08 | Vizito laukai priima Lietuvos vietinį laiką minučių tikslumu, o UTC ir poslinkio įvestį atmeta. ... ok
+test_08_conflicts_and_adjacent_slots (__main__.VisitTimeTests.test_08_conflicts_and_adjacent_slots)
+LT-08 | FR-08; VT-01 | Laiko kontrolė išlaiko automobilio ir darbo vietos konfliktus bei leidžia gretimus laikus. ... ok
+test_09_reschedule_and_history (__main__.VisitTimeTests.test_09_reschedule_and_history)
+LT-09 | FR-08; FR-09; NF-16 | Perkėlimas į praeitį atmetamas, į ateitį leidžiamas, paleidimas istorijos neperrašo. ... ok
+test_10_timezone_fallback_and_clock (__main__.VisitTimeTests.test_10_timezone_fallback_and_clock)
+LT-10 | FR-08; NF-08 | Be sistemos IANA bazės naudojami paketo duomenys, serverio laikrodis išlieka su Lietuvos zona. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 5.438s
+
+OK

@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
-SOURCE_FILES=['main.py','schema.sql','payment_provider.py','notification_provider.py','static/app.js','static/index.html','static/style.css','test_system.py','test_ui.js','test_regressions.py','test_browser.py','run_checks.py']
+SOURCE_FILES=['main.py','schema.sql','payment_provider.py','notification_provider.py','static/app.js','static/index.html','static/style.css','test_system.py','test_ui.js','test_regressions.py','test_visit_times.py','test_browser.py','run_checks.py','timezone_data/Europe_Vilnius','timezone_data/README.txt']
 
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -26,7 +26,7 @@ def run(count,include_browser):
     success=True
     for index in range(1,count+1):
         folder=destination/f'run{index}';folder.mkdir()
-        commands=[('http_db',[sys.executable,'test_system.py'],'test_results.json'),('ui_logic',[node,'test_ui.js'],'test_ui_results.json'),('regression',[sys.executable,'test_regressions.py'],'test_regression_results.json')]
+        commands=[('http_db',[sys.executable,'test_system.py'],'test_results.json'),('ui_logic',[node,'test_ui.js'],'test_ui_results.json'),('regression',[sys.executable,'test_regressions.py'],'test_regression_results.json'),('visit_time_regression',[sys.executable,'test_visit_times.py'],'test_visit_time_results.json')]
         if include_browser:commands.append(('browser_layout',[sys.executable,'test_browser.py','--output',str(folder/'browser')],str(folder/'browser/browser_results.json')))
         records=[]
         for group,command,result_name in commands:
@@ -39,7 +39,8 @@ def run(count,include_browser):
                 records.append({'group':group,'passed':0,'total':0,'exit_code':process.returncode,'error':'Rezultatų failas nesukurtas.'});success=False;continue
             data=json.loads(path.read_text())
             if group!='browser_layout':shutil.copy2(path,folder/path.name)
-            item={'group':group,'passed':data['passed'],'total':data['total'],'exit_code':process.returncode,'started_at':started,'result_file':str(path.relative_to(ROOT)) if group=='browser_layout' else path.name}
+            finished=datetime.now(timezone.utc).isoformat()
+            item={'group':group,'passed':data['passed'],'total':data['total'],'exit_code':process.returncode,'started_at':started,'finished_at':finished,'duration_seconds':round((datetime.fromisoformat(finished)-datetime.fromisoformat(started)).total_seconds(),3),'result_file':str(path.relative_to(ROOT)) if group=='browser_layout' else path.name}
             records.append(item)
             success=success and process.returncode==0 and data['passed']==data['total']
             print(f'Paleidimas {index} / {group}: {data["passed"]}/{data["total"]}',flush=True)

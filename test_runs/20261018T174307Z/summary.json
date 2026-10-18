@@ -1,0 +1,127 @@
+{
+  "started_at": "2026-10-18T17:43:07.626396+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "node": "v24.19.0",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39"
+  },
+  "source_sha256": {
+    "main.py": "f94d789ca62ae874a91694dcc40137535b41f9cf51f86f8ffe9add8fd8a413b8",
+    "schema.sql": "1bd73cffa7adff38f860e37e8cc068611de85f652940779c800a4315cf0a1102",
+    "payment_provider.py": "5fc44de9fea99d6395c42d40344a639a6e57e66686cca2c97434012ff0e1d8bf",
+    "notification_provider.py": "6f8d11b34a0945be85a320dd5b5be54c3411ac5a8aea2a0b66ceee3a92231f17",
+    "static/app.js": "d225fd9f499c6f61b6848766579d032d8af8bdd219b3c7c73225068516690bc6",
+    "static/index.html": "907d564eb7604db4e28b9386f9da2632764a0a470f5ea1a491043eb343a8d752",
+    "static/style.css": "2ed3b6342f998afd1ef2846fc9003bb061a3b6a773401fa6e6274782703b8052",
+    "test_system.py": "97df242f42b7b77cff48c91fabd035564c1862d364aecae06d484eaad812d8c6",
+    "test_ui.js": "ced8ec28cc39a9af9e70f4206fcacdc0f4cb91d6316971632179c91bed46f726",
+    "test_regressions.py": "779b92c3e48da800bdc6d4cea03f60d66fcd7cff30e1ec954116935405329fa5",
+    "test_visit_times.py": "79bfd6223b553a3707dc82798e8b61642dba09c563143dc21aeb5a4fac5798da",
+    "test_browser.py": "9bc537b2c3972e16376a48058c5ac573aafa6257c7f2946d8d5ec774e37f418c",
+    "run_checks.py": "bc39326f1e0abda23eb32ae020e9b4e84fb351a2a65d8c10bdfd6798457f6bea",
+    "timezone_data/Europe_Vilnius": "505cd15f7a2b09307c77d23397124fcb9794036a013ee0aed54265fb60fb0b75",
+    "timezone_data/README.txt": "385cfa3e08cde871a2e3466457f9f9a3b9daab3a272db56e84d0deb34bc2771a"
+  },
+  "demonstration_db_sha256_before": "d520c70c1ba10e9b5dac21c38897f6685b72353ad01dc2ff10f0ff8fdc1cd967",
+  "runs": [
+    {
+      "run": 1,
+      "results": [
+        {
+          "group": "http_db",
+          "passed": 457,
+          "total": 457,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:07.632244+00:00",
+          "finished_at": "2026-10-18T17:43:13.471608+00:00",
+          "duration_seconds": 5.839,
+          "result_file": "test_results.json"
+        },
+        {
+          "group": "ui_logic",
+          "passed": 33,
+          "total": 33,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:13.471673+00:00",
+          "finished_at": "2026-10-18T17:43:13.586489+00:00",
+          "duration_seconds": 0.115,
+          "result_file": "test_ui_results.json"
+        },
+        {
+          "group": "regression",
+          "passed": 14,
+          "total": 14,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:13.586545+00:00",
+          "finished_at": "2026-10-18T17:43:21.277903+00:00",
+          "duration_seconds": 7.691,
+          "result_file": "test_regression_results.json"
+        },
+        {
+          "group": "visit_time_regression",
+          "passed": 10,
+          "total": 10,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:21.277943+00:00",
+          "finished_at": "2026-10-18T17:43:26.860243+00:00",
+          "duration_seconds": 5.582,
+          "result_file": "test_visit_time_results.json"
+        }
+      ],
+      "functional_passed": 514,
+      "functional_total": 514
+    },
+    {
+      "run": 2,
+      "results": [
+        {
+          "group": "http_db",
+          "passed": 457,
+          "total": 457,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:26.860468+00:00",
+          "finished_at": "2026-10-18T17:43:32.204564+00:00",
+          "duration_seconds": 5.344,
+          "result_file": "test_results.json"
+        },
+        {
+          "group": "ui_logic",
+          "passed": 33,
+          "total": 33,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:32.204618+00:00",
+          "finished_at": "2026-10-18T17:43:32.319715+00:00",
+          "duration_seconds": 0.115,
+          "result_file": "test_ui_results.json"
+        },
+        {
+          "group": "regression",
+          "passed": 14,
+          "total": 14,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:32.319756+00:00",
+          "finished_at": "2026-10-18T17:43:40.310922+00:00",
+          "duration_seconds": 7.991,
+          "result_file": "test_regression_results.json"
+        },
+        {
+          "group": "visit_time_regression",
+          "passed": 10,
+          "total": 10,
+          "exit_code": 0,
+          "started_at": "2026-10-18T17:43:40.310965+00:00",
+          "finished_at": "2026-10-18T17:43:45.899797+00:00",
+          "duration_seconds": 5.589,
+          "result_file": "test_visit_time_results.json"
+        }
+      ],
+      "functional_passed": 514,
+      "functional_total": 514
+    }
+  ],
+  "demonstration_db_sha256_after": "d520c70c1ba10e9b5dac21c38897f6685b72353ad01dc2ff10f0ff8fdc1cd967",
+  "demonstration_db_unchanged": true,
+  "source_unchanged": true,
+  "success": true,
+  "finished_at": "2026-10-18T17:43:45.900740+00:00"
+}

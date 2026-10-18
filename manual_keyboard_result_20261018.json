@@ -1,0 +1,14 @@
+{
+  "reported_on": "2026-10-18",
+  "evidence_type": "user_reported_manual_check",
+  "performed_by": "naudotoja",
+  "program_state": "Realiai paleista programos kopija prieš galutines laiko kontrolės pataisas; kodo kontrolinė suma neužfiksuota.",
+  "reported_results": {
+    "Tab": "Pereina tarp laukų ir mygtukų.",
+    "Enter": "Aktyvuoja pasirinktus veiksmus.",
+    "Esc": "Uždaro dialogus."
+  },
+  "repeated_by_agent": false,
+  "full_service_workflow_verified": false,
+  "environment": "Tiksli bandymo aplinka šiame pranešime nenurodyta."
+}
